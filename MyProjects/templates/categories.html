@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="A brief description of your webpage for SEO.">
+  <meta name="author" content="Your Name">
+  <meta name="keywords" content="keywords, describing, your, page">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&family=Questrial&family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Special+Elite&family=Yantramanav:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/static/styles.css"> <!-- Link to external CSS -->
+	<title>Horror</title>
+</head>
+<body class="page-body">
+  <img class="bg-photo" src="/images/bg-face.jpg" loading="lazy" alt="collage">
+  <header class="page-header">
+    <div class="header-container">
+      <div class="logo-and-title">
+        <img class="chucky" src="/images/chucky.png" alt="Chucky" loading="lazy">
+        <h1 class="page-header1">oatmealhorror</h1>
+      </div>
+      <nav class="nav-menu">
+        <ul class="nav-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="categories.html">Categories</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+    <div class="search-box" id="searchBarContainer">
+      <input type="text" id="searchBar" placeholder="Search horror movies..." oninput="handleSearch()" />
+      <img class="search-pic" src="/images/eye.png" loading="lazy" alt="Chucky">
+      <div id="movieContainer"></div>
+    </div>
+    </header>
+    
+
+    <main style="padding:20px;">
+			<h3 class="cat-div-title">CHECK OUT DIFFERENT HORROR CATEGORIES!</h3>
+			<section class="section1">
+				<div class="slasher-category">
+					<h4 class="category-title">Slasher Movies</h4>
+					<p class="category-description">"Slashers Unleashed: Step into the blood-soaked world of masked maniacs and unstoppable killers. Explore a curated collection of pulse-pounding horror where every scream echoes in the night. From classic cult slashers to modern-day masterpieces, prepare to face the sharp edge of terror. Click to dive deeper... if you dare."</p>
+          <p class="category-title">POPULAR SLASHER MOVIES</p>
+
+          <div class="category-movie-div">
+            <div class="slasher-info">
+              <a class="slasher-links" href="https://www.imdb.com/title/tt0482606/?ref_=nv_sr_srsg_1_tt_7_nm_0_in_0_q_the%2520strangers" target="_blank" rel="noopener noreferrer">The Strangers</a>
+              <img class="movie-img" src="https://image.tmdb.org/t/p/original/gwsg4qFmLOvlhwXj4OZuxfFUdP0.jpg" loading="lazy" alt="The Strangers">
+              <p class="movie-infos">2008</p>
+            </div>
+
+            <div class="slasher-info">
+              <a class="slasher-links" href="https://www.imdb.com/title/tt0094862/?ref_=nv_sr_srsg_0_tt_2_nm_0_in_0_q_childs%2520play%25201988" target="_blank" rel="noopener noreferrer">Child's Play</a>
+              <img class="movie-img" src="https://image.tmdb.org/t/p/original/tiGJO2QHEqZcq5cPNGmqViswzpy.jpg" loading="lazy" alt="Child's Play">
+              <p class="movie-infos">1988</p>
+            </div>
+
+            <div class="slasher-info">
+              <a class="slasher-links" href="https://www.imdb.com/title/tt0080761/?ref_=nv_sr_srsg_0_tt_8_nm_0_in_0_q_friday%2520the%2520" target="_blank" rel="noopener noreferrer">Friday The 13th</a>
+              <img class="movie-img" src="https://image.tmdb.org/t/p/original/HzrPn1gEHWixfMOvOehOTlHROo.jpg" loading="lazy" alt="Friday The 13th">
+              <p class="movie-infos">1980</p>
+            </div>
+            <span class="link-holder link-holder-slh">
+              <a href="/slasher-category" class="basic-typing-slh">ALL SLASHER MOVIES</a>
+            </span>
+
+          </div>
+				</div>
+
+        <div class="paranormal-category">
+          <h4 class="category-title">Paranormal Movies</h4>
+          <p class="category-description">"Step into the chilling realm of the unseen: from ghostly apparitions to supernatural entities that defy explanation. Discover a handpicked selection of hair-raising horror where every whisper, shadow, and creak could be your last. From spine-tingling classics to modern-day paranormal nightmares, prepare to be haunted. Click to explore... if you’re brave enough."</p>
+          <p class="category-title">POPULAR PARANORMAL MOVIES</p>
+        
+          <div class="category-movie-div">
+            <div class="paranormal-info">
+              <a class="paranormal-links" href="https://www.imdb.com/title/tt1457767/" target="_blank" rel="noopener noreferrer">The Ring</a>
+              <img class="movie-img" src="https://image.tmdb.org/t/p/original/33rI0FWQZ5QssXR0fwsrIH0d33w.jpg" loading="lazy" alt="The Ring">
+              <p class="movie-infos">2002</p>
+            </div>
+        
+            <div class="paranormal-info">
+              <a class="paranormal-links" href="https://www.imdb.com/title/tt1591095/" target="_blank" rel="noopener noreferrer">Poltergeist</a>
+              <img class="movie-img" src="https://image.tmdb.org/t/p/original/xPazCcKp62IshnLVf9BLAjf9vgC.jpg" loading="lazy" alt="Poltergeist">
+              <p class="movie-infos">1982</p>
+            </div>
+        
+            <div class="paranormal-info">
+              <a class="paranormal-links" href="https://www.imdb.com/title/tt0435625/" target="_blank" rel="noopener noreferrer">Evil Dead</a>
+              <img class="movie-img" src="https://image.tmdb.org/t/p/original/1gDV0Lm9y8ufIKzyf0h0GBgb9Zj.jpg" loading="lazy" alt="Evil Dead">
+              <p class="movie-infos">2013 </p>
+            </div>
+
+            
+            <span class="link-holder link-holder-par">
+              <a href="/paranormal-category" class="basic-typing-par">All Paranormal Movies</a>
+            </span>
+          </div>
+        </div>
+
+        <div class="psychological-category">
+          <h4 class="category-title">Psychological Horror Movies</h4>
+          <p class="category-description">"Descend into the depths of the human psyche: explore mind-bending tales that blur the lines between reality and illusion. Psychological horror grips your mind with unsettling twists, eerie suspense, and a creeping sense of dread. From chilling classics to contemporary mind games, get ready to question everything. Click to enter... if you dare."</p>
+          <p class="category-title">POPULAR PSYCHOLOGICAL HORROR MOVIES</p>
+        
+          <div class="category-movie-div">
+            <div class="psychological-info">
+              <a class="psychological-links" href="https://www.imdb.com/title/tt0167404/" target="_blank" rel="noopener noreferrer">The Sixth Sense</a>
+              <img class="movie-img" src="https://image.tmdb.org/t/p/original/fIssD3w3SvIhPPmVo4WMgZDVLID.jpg" loading="lazy" alt="The Sixth Sense">
+              <p class="movie-infos">1999</p>
+            </div>
+        
+            <div class="psychological-info">
+              <a class="psychological-links" href="https://www.imdb.com/title/tt0478304/" target="_blank" rel="noopener noreferrer">The Witch</a>
+              <img class="movie-img" src="https://image.tmdb.org/t/p/original/zap5hpFCWSvdWSuPGAQyjUv2wAC.jpg" loading="lazy" alt="The Witch">
+              <p class="movie-infos">2016</p>
+            </div>
+        
+            <div class="psychological-info">
+              <a class="psychological-links" href="https://www.imdb.com/title/tt1375666/" target="_blank" rel="noopener noreferrer">Jacob's Ladder</a>
+              <img class="movie-img" src="https://image.tmdb.org/t/p/original/8mK0eam3Qw1OG7ZuxS5o1WCfrVv.jpg" loading="lazy" alt="Jacobs Ladder">
+              <p class="movie-infos">1990</p>
+            </div>
+            <span class="link-holder link-holder-psy">
+              <a href="/paranormal-category" class="basic-typing-par">All Psychological Movies</a>
+            </span>
+          </div>
+        </div>
+
+            
+        
+			</section>
+    </main>
+		<script src="scripts.js"></script>
+		<script src="scroll-script.js"></script>
+		<script src="mouse-swipe.js"></script>
+		<footer style="background-color: #111; color: #ffffff; padding: 20px; text-align: center; border-top: 1px solid #e0e0e0;">
+			<div style="margin-bottom: 15px;">
+				<p>&copy; 2024 Oatmeal Horror</p>
+			</div>
+			<div style="margin-bottom: 10px;">
+				<a href="/about" style="color: #ffffff; margin: 0 10px; text-decoration: none;">About Us</a> |
+				<a href="/contact" style="color: #ffffff; margin: 0 10px; text-decoration: none;">Contact</a> |
+				<a href="/privacy" style="color: #ffffff; margin: 0 10px; text-decoration: none;">Privacy Policy</a>
+			</div>
+			<div>
+        <a href="https://twitter.com/" target="_blank" rel="noopener noreferrer"><img src="/images/x.jpg" alt="Twitter" style="width: 24px; margin: 0 5px;"></a>
+        <a href="https://facebook.com/" target="_blank" rel="noopener noreferrer"><img src="/images/fb.png" alt="Facebook" style="width: 24px; margin: 0 5px;"></a>
+        <a href="https://instagram.com/" target="_blank" rel="noopener noreferrer"><img src="/images/insta.png" alt="Instagram" style="width: 24px; margin: 0 5px;"></a>
+    </div>
+		</footer>	
+    </body>
+    </html>

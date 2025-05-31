@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="A brief description of your webpage for SEO.">
+  <meta name="author" content="Your Name">
+  <meta name="keywords" content="keywords, describing, your, page">
+  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@100&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&family=Questrial&family=Raleway:ital,wght@0,100..900;1,100..900&family=Yantramanav:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&family=Questrial&family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Yantramanav:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/static/style.css"> <!-- Link to external CSS -->
+	<title>Horror</title>
+</head>
+<body class="page-body">
+  <header class="page-header">
+    <h1 class="page-header1">Horror Movie Finder</h1>
+  	<nav>
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#contact">Contact</a></li>
+			</ul>
+    </nav>
+  </header>
+<!--Main Section Here-->
+  <main style="padding:20px;">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-2">
+          <img class="film-pics" src="/images/jeeper.jpg" loading="lazy">
+          <div class="film-description">
+            <p class="movie-info">2001</p><span class="film-type">Horror/Slasher</span><br>
+          </div>
+          <a class="movie-links" href="https://www.imdb.com/title/tt0263488/?ref_=nv_sr_srsg_0_tt_8_nm_0_in_0_q_jeepers%2520">Jeepers Creepers</a>
+        </div>
+        <div class="item-movie">
+          <img class="film-pics" src="/images/smile.jpg" loading="lazy">
+          <div class="film-description">
+            <p class="movie-info">2022</p><span class="film-type">Horror/Supernatural</span><br>
+          </div>
+          <a class="movie-links" href="https://www.imdb.com/title/tt15474916/?ref_=nv_sr_srsg_4_tt_7_nm_0_in_0_q_SMILE">SMILE</a>
+        </div>
+        <div class="d-flex">
+          <div class="bg-light border p-3" id="sidebar">
+            <h5>Filter</h5>
+            <ul class="list-group">
+              <li class="list-group-item"><a href="#">By Genre</a></li>
+              <li class="list-group-item"><a href="#">By Year</a></li>
+              <li class="list-group-item"><a href="#">By Rating</a></li>
+            </ul>
+          </div>
+          <div class="flex-grow-1 p-3" id="main-content">
+            <h2>Horror Movie Finder</h2>
+            <p>Browse the most chilling movies here.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+
+    <script src="script.js"></script> <!-- Link to external JavaScript -->
+    <script>
+        // Optional internal JavaScript
+        console.log('Hello, World!');
+    </script>
+</body>
+</html>
