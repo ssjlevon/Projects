@@ -9,6 +9,7 @@ async function fetchPopularHorrorMovies() {
     const data = await res.json();
     
     const topFive = data.results.slice(0, 7);
+    console.log(topFive);
 
     const moviesWithImdb = await Promise.all(
       topFive.map(async movie => {
@@ -30,7 +31,7 @@ function displayPopular(movies) {
     <div class="trend-movie">
       <a class="imdb-link" href="https://www.imdb.com/title/${movie.imdb_id}/" target="_blank" rel="noopener noreferrer">
         <img class="pop-movie" src="https://image.tmdb.org/t/p/w500${movie.poster_path}" alt="${movie.title}" loading="lazy">
-        <h3 class="search-title">${movie.title}</h3>
+        <p class="search-title">${movie.title}</p>
       </a>
     </div>`).join('');
   

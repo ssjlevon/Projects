@@ -64,7 +64,7 @@ function displayMovies(movies) {
   const limitedMovies = movies.slice(0, 3);
   movieContainer.innerHTML = limitedMovies.map(movie => `
     <div class="movie">
-      <a class="imdb-link" href="https://www.imdb.com/title/${movie.imdb_id}/" target="_blank" rel="noopener noreferrer">
+      <a class="imdb-movie-link" href="https://www.imdb.com/title/${movie.imdb_id}/" target="_blank" rel="noopener noreferrer">
         <img class="searched-movie" src="https://image.tmdb.org/t/p/w500${movie.poster_path}" alt="${movie.title}" loading="lazy">
         <h3 class="search-title">${movie.title}</h3>
         

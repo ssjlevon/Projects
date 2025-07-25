@@ -569,21 +569,15 @@ html, body {
     border-radius: 8px;
   }
 .movie {
-    background-color: #222;
+    background-color: none;
     color: #fff;
-    border-radius: 8px;
     overflow: hidden;
     box-shadow: 0 4px 8px rgba(255, 0, 0, 0.2);
     text-align: center;
-    padding: 15px;
-    height:125px;
-    width:120px;
-    position: relative;
-    left:70px;
-    display:flex;
-    flex-direction: column;
-    margin:15px;
-    border-radius: 28px;
+    display:block;
+    margin:25px;
+    border-radius: 10px;
+
   }
   #movieContainer {
     position: absolute; /* Keeps it from affecting other elements */
@@ -618,7 +612,7 @@ html, body {
 
   }
 .movie h3 {
-   font-size:17px;
+   font-size:2vh;
    margin: 10px 0;
    color:rgb(255, 247, 247);
    margin-left:10px;
@@ -775,7 +769,7 @@ html, body {
     height: 40px;
     padding: 10px;
     font-size: 16px;
-    color: #000000;
+    color: #fdfdfd;
     background-color: #2d2d2d; /* Dark background for a spooky vibe */
     border: 2px solid #e63946; /* Blood-red border */
     border-radius: 25px;
@@ -1130,6 +1124,12 @@ html, body {
 }
 .imdb-link {
     text-decoration: none;
+    
+}
+.imdb-movie-link {
+    text-decoration: none;
+    display: flex;
+    
 }
 .movie-info {
     margin:0px;
