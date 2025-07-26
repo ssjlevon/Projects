@@ -1,0 +1,1732 @@
+@import url('https://fonts.googleapis.com/css2?family=Eater&family=Creepster&display=swap');
+html, body {
+    overflow-x: hidden;
+    width: 100%;
+}
+/* HEADER @TYLES */
+.cat-div-title {
+    font-family: "Special Elite", system-ui; /* Maintain the spooky font */
+    font-weight: 400;
+    font-style: normal;
+    display: inline-block;
+    color: #ff3333; /* Brighter red for better visibility */
+    position: relative;
+    left:350px;
+    bottom: 10px;
+    font-size: 30px; /* Increased font size for more impact */
+    margin: 25px 0;
+    text-shadow: 1px 1px 2px #ff0000, 0px 0px 5px #ff3333; /* Subtle and refined glow */
+    letter-spacing: 2px; /* Slight spacing for dramatic text */
+    text-transform: uppercase; /* Make it stand out */
+    transition: all 0.3s ease-in-out; /* Smooth transitions for hover effects */
+    border-radius: 10px;
+    padding: 7px;
+    width:980px;
+}
+.classicheader {
+    font-family: 'Eater', cursive; /* Horror-themed font */
+    font-size: 1.5rem;
+    text-align: center;
+    text-transform: uppercase;
+    position: relative;
+    animation: flicker 1.5s infinite alternate;
+    justify-content: center;
+    
+}
+
+
+.comedy-head {
+    font-family: "Special Elite", system-ui; /* Maintain the spooky font */
+    font-weight: 400;
+    font-style: normal;
+    display: inline-block;
+    color: #ff3333; /* Brighter red for better visibility */
+    position: relative;
+    left: 620px;
+    bottom: 10px;
+    font-size: 30px; /* Increased font size for more impact */
+    margin: 25px 0;
+    text-shadow: 1px 1px 2px #ff0000, 0px 0px 5px #ff3333; /* Subtle and refined glow */
+    letter-spacing: 2px; /* Slight spacing for dramatic text */
+    text-transform: uppercase; /* Make it stand out */
+    transition: all 0.3s ease-in-out; /* Smooth transitions for hover effects */
+    background-color: #000000;
+    border-radius: 10px;
+    padding: 7px;
+    border:1px solid #000000;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8), 0px 0px 8px rgba(255, 0, 0, 0.6);
+    width:265px;
+}
+.funfactheader {
+    display:inline-block;
+    color:#fff;
+    font-family: "Special Elite", system-ui; /* Maintain the spooky font */
+    font-weight: 400;
+    text-shadow: 1px 1px 2px #1e1c1c, 0px 0px 5px #1d1a1a; /* Subtle and refined glow */
+}
+.gem-header {
+    font-family: "Special Elite", system-ui; /* Maintain the spooky font */
+    font-weight: 400;
+    font-style: normal;
+    display: inline-block;
+    color: #ff3333; /* Brighter red for better visibility */
+    position: relative;
+    left: 660px;
+    bottom: 10px;
+    font-size: 30px; /* Increased font size for more impact */
+    margin: 25px 0;
+    text-shadow: 1px 1px 2px #ff0000, 0px 0px 5px #ff3333; /* Subtle and refined glow */
+    letter-spacing: 2px; /* Slight spacing for dramatic text */
+    text-transform: uppercase; /* Make it stand out */
+    transition: all 0.3s ease-in-out; /* Smooth transitions for hover effects */
+    background-color: #000000;
+    border-radius: 10px;
+    padding: 7px;
+    border:1px solid #000000;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8), 0px 0px 8px rgba(255, 0, 0, 0.6);
+    width:220px;
+}
+.gem-title {
+    font-family:"Special Elite", system-ui;
+    font-size: 24px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    margin-bottom: 20px;
+    
+    display:block;
+    text-align: center;
+    color:#ffffff;
+}
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    max-width: 1800px;
+}
+.nav-links li a {
+    text-decoration: none;
+    color: aliceblue;
+    font-family: "Roboto", sans-serif;
+    font-size: 20px;
+    transition: color 0.3s ease-in-out;
+}
+
+.nav-links li a:hover {
+    color: crimson;
+}
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+    margin: 0;
+    padding: 0;
+}
+.nav-menu {
+    display: flex;
+    justify-content: flex-end;
+    position: relative;
+    left:360px;
+    bottom:200px;
+}
+.page-body {
+    background-color:rgb(26, 25, 25);
+}
+.page-header {
+    display: flex;
+    justify-content: center;
+    background-color: transparent;
+    padding: 20px 40px;
+    align-items: center;
+    border-bottom: 3px solid crimson;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+    position: relative;
+    padding-bottom: 10px; /* Adds space below the header */
+    height:510px;
+    background: url('/images/screams.jpg') no-repeat center top;
+    background-size: cover; /* Adjusts the image to fit the header */
+    z-index: 2; 
+}
+.page-header::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.3); /* Adjust for a darker effect */
+    z-index: -1;
+  }
+
+.page-header1 {
+    font-family: "Special Elite", system-ui;
+    font-weight: 400;
+    font-style: normal;
+    margin:0px;
+    display:inline-block;
+    color:aliceblue;
+}
+.psycho-cat {
+    font-family: "Special Elite", system-ui; /* Maintain the spooky font */
+    font-weight: 400;
+    font-style: normal;
+    display: inline-block;
+    color: #ff3333; /* Brighter red for better visibility */
+    position: relative;
+    left: 530px;
+    bottom: 10px;
+    font-size: 30px; /* Increased font size for more impact */
+    margin: 25px 0;
+    text-shadow: 1px 1px 2px #ff0000, 0px 0px 5px #ff3333; /* Subtle and refined glow */
+    letter-spacing: 2px; /* Slight spacing for dramatic text */
+    text-transform: uppercase; /* Make it stand out */
+    transition: all 0.3s ease-in-out; /* Smooth transitions for hover effects */
+    background-color: #000000;
+    border-radius: 10px;
+    padding: 7px;
+    border:1px solid #000000;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8), 0px 0px 8px rgba(255, 0, 0, 0.6);
+}
+
+.slsh-category {
+    font-family: "Special Elite", system-ui; /* Maintain the spooky font */
+    font-weight: 400;
+    font-style: normal;
+    display: inline-block;
+    color: #ff3333; /* Brighter red for better visibility */
+    position: relative;
+    left: 620px;
+    bottom: 10px;
+    font-size: 30px; /* Increased font size for more impact */
+    margin: 25px 0;
+    text-shadow: 1px 1px 2px #ff0000, 0px 0px 5px #ff3333; /* Subtle and refined glow */
+    letter-spacing: 2px; /* Slight spacing for dramatic text */
+    text-transform: uppercase; /* Make it stand out */
+    transition: all 0.3s ease-in-out; /* Smooth transitions for hover effects */
+    background-color: #000000;
+    border-radius: 10px;
+    padding: 7px;
+    border:1px solid #000000;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8), 0px 0px 8px rgba(255, 0, 0, 0.6);
+}
+.topmonthheader {
+    font-family: 'Eater', cursive; /* Horror-themed font */
+    font-size: 1.5rem;
+    text-align: center;
+    text-transform: uppercase;
+    position: relative;
+    animation: flicker 1.5s infinite alternate;
+    justify-content: center;
+}
+.trending-header {
+    font-family: "Special Elite", system-ui; /* Maintain the spooky font */
+    font-weight: 400;
+    font-style: normal;
+    display: inline-block;
+    color: #ff3333; /* Brighter red for better visibility */
+    font-size: 30px; /* Increased font size for more impact */
+    text-shadow: 1px 1px 2px #ff0000, 0px 0px 5px #ff3333; /* Subtle and refined glow */
+    letter-spacing: 2px; /* Slight spacing for dramatic text */
+    text-transform: uppercase; /* Make it stand out */
+    transition: all 0.3s ease-in-out; /* Smooth transitions for hover effects */
+    background-color: #000000;
+    border-radius: 10px;
+    padding: 7px;
+    border:1px solid #000000;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8), 0px 0px 8px rgba(255, 0, 0, 0.6);
+    height:3.5vh;
+    margin-right:110px;
+}
+.slashheader::after {
+    content: '';
+    position: absolute;
+    bottom: -10px;
+    left: 50%;
+    width: 2px;
+    height: 20px;
+    background-color: #ff4444;
+    animation: drip 2s infinite;
+}
+
+
+/* Flickering animation for a creepy effect */
+@keyframes flicker {
+    0%, 19%, 21%, 23%, 25%, 54%, 56%, 100% {
+        opacity: 1;
+        text-shadow: 0 0 5px #ff4444, 0 0 10px #ff4444, 0 0 20px #ff4444;
+    }
+    20%, 24%, 55% {
+        opacity: 0.8;
+        text-shadow: none;
+    }
+}
+@keyframes drip {
+    0% {
+        transform: translateY(0);
+        opacity: 1;
+        text-shadow: 0 0 5px #ff4444, 0 0 10px #ff4444, 0 0 20px #ff4444;
+    }
+    50% {
+        transform: translateY(20px);
+        opacity: 0.5;
+        text-shadow: 0 0 5px #ff4444, 0 0 10px #ff4444, 0 0 20px #ff4444;
+    }
+    100% {
+        transform: translateY(40px);
+        opacity: 0;
+        text-shadow: 0 0 5px #ff4444, 0 0 10px #ff4444, 0 0 20px #ff4444;
+    }
+}
+/* Blood drip animation */
+
+.category-title {
+    font-family: "Special Elite", system-ui; /* Maintain the spooky font */
+    font-weight: 400;
+    font-style: normal;
+    display: inline-block;
+    color: #ff3333; /* Brighter red for better visibility */
+    position: relative;
+    font-size: 40px; /* Increased font size for more impact */
+    text-shadow: 1px 1px 2px #ff0000, 0px 0px 5px #ff3333; /* Subtle and refined glow */
+    letter-spacing: 2px; /* Slight spacing for dramatic text */
+    text-transform: uppercase; /* Make it stand out */
+    transition: all 0.3s ease-in-out; /* Smooth transitions for hover effects */
+    left:10px;
+    
+}
+
+.supntral {
+    font-family: "Special Elite", system-ui; /* Maintain the spooky font */
+    font-weight: 400;
+    font-style: normal;
+    display: inline-block;
+    color: #ff3333; /* Brighter red for better visibility */
+    position: relative;
+    left: 588px;
+    bottom: 10px;
+    font-size: 30px; /* Increased font size for more impact */
+    margin: 25px 0;
+    text-shadow: 1px 1px 2px #ff0000, 0px 0px 5px #ff3333; /* Subtle and refined glow */
+    letter-spacing: 2px; /* Slight spacing for dramatic text */
+    text-transform: uppercase; /* Make it stand out */
+    transition: all 0.3s ease-in-out; /* Smooth transitions for hover effects */
+    background-color: #000000;
+    border-radius: 10px;
+    padding: 7px;
+    border:1px solid #000000;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8), 0px 0px 8px rgba(255, 0, 0, 0.6);
+}
+/* END HEADER STYLES*/
+
+/* DIV STYLES*/
+.author {
+    position: relative;
+    padding-top: 20px;
+}
+.category-container {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    margin:30px;
+}
+.classic-list {
+    display: flex;
+    flex-direction: column;
+    gap: 15px; /* Spacing between movies */
+    transition: transform 0.4s ease-in-out;
+    padding-left:50px;
+    margin-top:38px;
+    
+}
+
+.classic-list:hover .film-overlay {
+    opacity: 1;  /* Make it visible */
+    transform: translateY(0); /* Move into place */
+}
+.classicmv1 {
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    padding-left: 20px;
+    padding-right: 20px;
+    width: 300px; /* Match poster width */
+    height: 450px; /* Match poster height */
+}
+
+.container {
+    max-width: 1800px;
+    width: 100%;
+    border-bottom: 3px solid crimson;
+    display: flex;
+    height:161.5vh;
+}
+.container1 {
+    background:none;
+    display: flex;
+    flex-direction: column;
+}
+.content-wrapper {
+    display: flex;
+    flex-direction: column; /* Fun fact on top, trending below */
+    flex: 1;
+    gap: 250px;
+    padding:50px;
+    overflow: hidden;
+
+  }
+.featured-container {
+    display: grid;
+    grid-template-columns: repeat(5, 100px); /* 5 columns, each 100px wide */
+    gap: 190px; /* Space between boxes */
+    left:19px;
+    top:380px;
+    position: absolute;
+    justify-content: space-evenly; 
+    flex-wrap: wrap; 
+    margin: 0;
+    padding: 0;
+}
+.featured-head {
+    position: absolute; /* Makes it easier to position "FEATURED" */
+    bottom:180px;
+    left:40px;
+}
+.film-description {
+    color:rgb(255, 247, 247);
+    margin:0px;
+    padding:0px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.film-overlay {
+    color: white;
+    text-align: center;
+    border-radius: 10px;
+    padding-right:70px;
+    
+    
+}
+.film-overlay button {
+    background: crimson;
+    color: white;
+    border: none;
+    padding: 8px 25px;
+    font-size: 14px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background 0.3s ease-in-out;
+}
+
+.fun-fact {
+    position: relative;
+    left:10px;
+    bottom: 10px;
+    background: linear-gradient(145deg, #000000, #270a4c); /* Black to deep red gradient */
+    padding: 20px;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.6); /* Shadow for depth */
+    display:inline-block;
+    width:200px;
+    height:40vh;
+    margin-right:50px;
+    
+    
+}
+.gem-1 {
+    display:flex;
+    background-color: #0d0d0d;
+    width:90%;
+    flex-direction:row;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8), 0px 0px 8px rgba(255, 0, 0, 0.6);
+    border-radius: 20px;
+    margin:20px;
+}
+.gem-description {
+    color:rgb(255, 247, 247);
+    margin:0px;
+    padding:0px;
+    display: block;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.horror-category {
+    display: flex;
+    flex-direction: row;
+    gap:10px;
+}
+#horrorContainer {
+    display: flex;
+    flex-wrap: nowrap; /* or row if scrolling */
+    gap: 20px;
+    position: static; /* <- Remove absolute! */
+    width: 100%;
+    box-sizing: border-box;
+}
+.item-movie {
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    padding-left: 20px;
+    padding-right: 20px;
+    width: 300px; /* Match poster width */
+    height: 450px; /* Match poster height */
+
+} 
+.item-movie:hover .movie-description {
+    opacity: 1;
+  }
+.item-movie1 {
+    height: 250px;
+    display: flex;
+    flex-direction: column;
+    padding-left: 20px;
+    padding-right: 20px;
+    height: 450px; /* Match poster height */  
+    position: relative;
+}
+.item-movie1:hover .movie-description {
+    opacity: 1;
+  }
+.item-movie2 {
+    height: 250px;
+    display: flex;
+    flex-direction: column;
+    padding-left: 20px;
+}
+.item-movie3 {
+    height: 250px;
+    display: flex;
+    flex-direction: column;
+    padding-left: 20px;
+    
+}
+.item-movie4 {
+    height: 250px;
+    display: flex;
+    flex-direction: column;
+    padding-left: 20px;
+    
+}
+.item-movie5 {
+    height: 250px;
+    display: flex;
+    flex-direction: column;
+    padding-left: 20px;
+}
+.item-movie5 .substance {
+    bottom:165px;
+    left:140px;
+    position: relative;
+    height:50px;
+    width:100px;
+}
+
+.logo-and-title {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    position: relative;
+    bottom:202px;
+    right:30px;
+}
+.meta-info {
+    display:flex;
+    justify-content: space-evenly;
+    border-bottom: 0.5px solid #eee;
+    padding-bottom: 10px;
+}
+.meta-info2 {
+    position: relative;
+    display: flex;
+    justify-content: space-evenly;
+    top:10px;
+    right:10px;
+}
+.miscellaneous {
+    display:flex;
+    flex-direction: row;
+    width:100vh;
+    height:50vh;
+}
+.modal {
+    display: none;
+    position: fixed !important;
+    top: 0 !important;
+    left: 0 !important;
+    width: 100vw !important;
+    height: 100vh !important;
+    background: rgba(0, 0, 0, 0.8);
+    justify-content: center;
+    align-items: center;
+    z-index: 9999; /* Ensures it’s on top */
+}
+.modal-content {
+    overflow: hidden;
+    position: relative;
+    background: black;
+    padding: 20px;
+    border-radius: 8px;
+  }
+.movie {
+    background-color: none;
+    color: #fff;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(255, 0, 0, 0.2);
+    text-align: center;
+    display:block;
+    margin:25px;
+    border-radius: 10px;
+
+  }
+  #movieContainer {
+    position: absolute; /* Keeps it from affecting other elements */
+    top: 50px; /* Adjust based on your layout */
+    left: 0; /* Adjust to position under the search bar */
+    right: 0;
+    margin: 0 auto; /* Center if needed */
+    background-color:transparent;
+    display:inline-block;
+    pointer-events: auto; /* Allow interactions within */
+  }
+  .movie-description {
+    position: absolute; /* Position relative to the parent container */
+    top: 10px; /* Position slightly inside the poster */
+    left: 10px; /* Position slightly inside the poster */
+    width: calc(100% - 20px); /* Slightly smaller than the poster width */
+    height: calc(100% - 20px); /* Slightly smaller than the poster height */
+    background: rgba(53, 47, 47, 0.8); /* Semi-transparent background */
+    color: white; /* Text color */
+    opacity: 0; /* Hide by default */
+    transition: opacity 0.3s ease-in-out; /* Smooth transition for opacity */
+    border-radius: 10px; /* Rounded corners */
+    box-sizing: border-box; /* Include padding and border in the element's dimensions */
+    padding: 20px; /* Add padding for spacing inside the description */
+    overflow: hidden; /* Prevent content from overflowing */
+
+  }
+  
+  .movie img {
+    width: 60px;
+    height: 60px;
+
+  }
+.movie h3 {
+   font-size:2vh;
+   margin: 10px 0;
+   color:rgb(255, 247, 247);
+   margin-left:10px;
+   font-family: "Roboto", sans-serif;
+   font-weight: 100;
+   font-weight: bold;
+  }
+  .movie p {
+    font-size: 0.9em;
+    line-height: 1.4;
+    color: rgb(255, 247, 247);
+  }
+.paranormal-category {
+    display:flex;
+    width:30%;
+    height:auto !important;
+    flex-direction:column;
+    border-radius: 20px;
+    margin:20px;
+    background: linear-gradient(145deg, #000000, #080f64); /* Black to deep red gradient */
+    color: #f44336; /* Blood red text */
+    padding: 20px;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.6); /* Shadow for depth */
+    text-align: center;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.9); /* Slight glow for eerie effect */
+    transition: transform 0.3s, box-shadow 0.3s; /* Smooth hover effects */
+}
+.paranormal-category:hover {
+    transform: scale(1.05); /* Slight zoom on hover */
+    box-shadow: 0 10px 20px rgba(0, 17, 255, 0.8); /* Red glow on hover */
+    text-shadow: 3px 3px 10px rgba(0, 47, 255, 0.8); /* Enhance red glow */
+  }
+.paranormal-category a {
+    text-decoration: none; /* Remove underline from link */
+}
+  
+.paranormal-category a:hover {
+    color: #ff6161; /* Lighter red for link hover */
+}
+.paranormal-category .category-description {
+    font-family: 'Georgia', serif; /* Or any elegant font */
+    font-size: 1.2rem; /* Slightly larger */
+    font-weight: 500; /* Medium weight */
+    color: #5676e0; /* Subtle purple or grayish lavender */
+    line-height: 1.6; /* Improve readability */
+    text-shadow: 3px 3px 10px rgba(91, 115, 221, 0.8); /* Enhance red glow */
+}
+.paranormal-category .category-title {
+    color: rgb(253, 253, 253);
+    text-shadow: 1px 1px 2px #0037ff, 0px 0px 5px #2634fa; /* Subtle and refined glow */
+}
+.popular-container {
+    display:flex;
+    width:100%;
+    overflow:hidden;
+    padding:25px;
+}
+.popular-movie {
+    background-color: #222;
+    color: #fff;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(255, 0, 0, 0.2);
+    text-align: center;
+    padding: 15px;
+    height:425px;
+    width:420px;
+    position: relative;
+    display:flex;
+    flex-direction: row;
+    margin:15px;
+    border-radius: 28px;
+}
+.popular-wrapper {
+    display: flex;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+    gap: 1rem;
+    padding: 1rem 0;
+      
+}
+.psychological-category {
+    display:flex;
+    width:30%;
+    height:auto !important;
+    flex-direction:column;
+    border-radius: 20px;
+    margin:20px;
+    background: linear-gradient(145deg, #000000, #270a4c); /* Black to deep red gradient */
+    color: #f44336; /* Blood red text */
+    padding: 20px;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.6); /* Shadow for depth */
+    text-align: center;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.9); /* Slight glow for eerie effect */
+    transition: transform 0.3s, box-shadow 0.3s; /* Smooth hover effects */
+}
+.psychological-category:hover {
+    transform: scale(1.05); /* Slight zoom on hover */
+    box-shadow: 0 10px 20px rgba(165, 34, 231, 0.8); /* Red glow on hover */
+    
+  }
+.psychological-category a {
+    text-decoration: none; /* Remove underline from link */
+}
+  
+.psychological-category a:hover {
+    color: #ff6161; /* Lighter red for link hover */
+}
+.psychological-category .category-description {
+    color: rgb(255, 255, 255);
+    text-shadow: 1px 1px 2px #5578fa, 0px 0px 5px #504848; /* Subtle and refined glow */
+    font-family: 'Georgia', serif; /* Or any elegant font */
+    font-size: 1.2rem; /* Slightly larger */
+    font-weight: 500; /* Medium weight */
+    color: #D1C4E9; /* Subtle purple or grayish lavender */
+    line-height: 1.6; /* Improve readability */
+}
+.psychological-category .category-title {
+    color: rgb(255, 255, 255);
+    text-shadow: 3px 3px 10px rgba(93, 0, 255, 0.8); /* Enhance red glow */
+}
+.psychological-info {
+    display:flex;
+    flex-direction: column;
+    margin:10px;
+    align-items: center;
+}
+.psychological-links {
+    color:rgb(255, 247, 247);
+    margin-top:9px;
+    margin-bottom:15px;
+    font-family: "Roboto", sans-serif;
+    font-weight: 100;
+    font-weight: bold;
+    text-decoration: none;
+    position: relative;
+    left:20px;
+}
+.scroll-wrapper {
+   display: flex;
+   overflow-x: auto;
+   scroll-behavior: smooth;
+   overflow:hidden;
+}
+  
+.search-box {
+    position:relative;
+    bottom:205px;
+    right:496px;
+    display:flex;
+}
+.search-box input[type="text"] {
+    width: 350px;
+    height: 40px;
+    padding: 10px;
+    font-size: 16px;
+    color: #fdfdfd;
+    background-color: #2d2d2d; /* Dark background for a spooky vibe */
+    border: 2px solid #e63946; /* Blood-red border */
+    border-radius: 25px;
+    text-shadow: 1px 1px 3px black; /* Eerie text shadow */
+    box-shadow: 0 0 10px #e63946; /* Glow effect around the box */
+    transition: transform 0.5s ease; /* Smooth animation for transformations */
+    
+}
+.search-box input:hover {
+    background-color:#fff;
+    color:#000000;
+    transform: scale(1.1); /* Slightly enlarges the image when hovered */
+}
+.sidebar-div {
+    display:flex;
+    flex-direction:row;
+}
+.slasher-category {
+    display:flex;
+    width:30%;
+    height:auto !important;
+    flex-direction:column;
+    border-radius: 20px;
+    margin:20px;
+    background: linear-gradient(145deg, #000000, #4f0202); /* Black to deep red gradient */
+    color: #f44336; /* Blood red text */
+    padding: 20px;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.6); /* Shadow for depth */
+    text-align: center;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.9); /* Slight glow for eerie effect */
+    transition: transform 0.3s, box-shadow 0.3s; /* Smooth hover effects */
+}
+.slasher-category:hover {
+    transform: scale(1.05); /* Slight zoom on hover */
+    box-shadow: 0 10px 20px rgba(255, 0, 0, 0.8); /* Red glow on hover */
+    text-shadow: 3px 3px 10px rgba(255, 0, 0, 0.8); /* Enhance red glow */
+  }
+  .slasher-category a {
+    text-decoration: none; /* Remove underline from link */
+    
+  }
+  
+  .slasher-category a:hover {
+    color: #ff6161; /* Lighter red for link hover */
+  }
+  .slasher-category .category-description {
+    color: rgb(196, 80, 80);
+    text-shadow: 1px 1px 2px #c13f3f, 0px 0px 5px #a41414; /* Subtle and refined glow */
+    font-family: 'Georgia', serif; /* Or any elegant font */
+    font-size: 1.2rem; /* Slightly larger */
+    font-weight: 500; /* Medium weight */
+    
+    line-height: 1.6; /* Improve readability */
+  }
+  .slasher-category .category-title {
+    color: rgb(255, 255, 255);
+    text-shadow: 3px 3px 10px rgba(255, 0, 0, 0.8); /* Enhance red glow */
+  }
+.slasher-info {
+    display:flex;
+    flex-direction: column;
+    margin:10px;
+    align-items: center;
+}
+.top5slash {
+    display: flex;
+    margin-top:40px;
+    justify-content: space-evenly;
+    border-bottom: 2px solid rgb(238, 0, 0); /* Adjust thickness and color */
+    position: relative;
+    right:57px;
+}
+.trend-movie {
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    padding:50px;
+    width: 300px; /* Match poster width */
+    height: 450px; /* Match poster height */
+}
+.trending-movies {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    padding-bottom: 15px;
+    overflow-x: auto;
+}
+/* Style the scrollbar container */
+.trending-movies::-webkit-scrollbar {
+    height: 5px; /* Set the height of the horizontal scrollbar */
+  }
+  
+  /* Style the scrollbar track */
+  .trending-movies::-webkit-scrollbar-track {
+    background: #4e4949; /* Light grey track */
+    border-radius: 10px;
+  }
+  
+  /* Style the scrollbar thumb (the draggable part) */
+  .trending-movies::-webkit-scrollbar-thumb {
+    background: #b7b6b6; /* Dark grey thumb */
+    border-radius: 10px;
+  }
+  
+  /* On hover, change the scrollbar thumb color */
+  .trending-movies::-webkit-scrollbar-thumb:hover {
+    background: #e21616; /* Darker thumb on hover */
+  }
+.category-movie-div {
+    position: relative; /* If this is necessary */
+    display: flex;
+    flex-wrap: wrap; /* Allows items to wrap to the next row if needed */
+    gap: 20px; /* Adds consistent spacing between boxes */
+    justify-content:space-evenly;
+    right: 30px; /* If this is intentional */
+}
+
+
+
+/* END DIV STYLES*/
+
+
+/* IMAGE STYLING*/
+.bg-photo {
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-image: url('/images/bg-hall.webp');
+    background-size:cover;
+    background-position: center;
+    z-index: -1; /* Moves background behind other content */
+    height:100%;
+    width:100%;
+}
+.chucky {
+    height:100px;
+    width:100px;
+    border-radius: 50%;
+    border: 2px solid crimson;
+    object-fit:fill;
+    filter: drop-shadow(0 0 10px rgba(255, 0, 0, 0.6));
+}
+
+.featuredlogo {
+    height:75px;
+    width:125px;
+    margin-top: 20px;
+    position: relative;
+    left:50px;
+    bottom:106px;
+}
+.item-movie3 .suspiria {
+    position: relative;
+    bottom:110px;
+}
+.film-pic {
+    height:270px;
+    width:210px;
+    border-radius: 15px;
+    object-fit: cover;
+    
+}
+.film-pics {
+    height:270px;
+    width:210px;
+    border-radius: 15px;
+    margin-bottom: 10px;
+    
+}
+.film-pics1 {
+    height:450px;
+    width:300px;
+    border-radius: 15px;
+    margin-bottom: 10px;
+    position:relative;
+    left:65px;
+    object-fit: cover;
+}
+.film-pics2 {
+    width: 256px;
+    height: 144px; /* 16:9 ratio */
+    border-radius: 15px;
+    margin-bottom: 10px;
+    object-fit: cover;
+}
+.film-pics3 {
+    height:50px;
+    width:30px;
+    border-radius: 15px;
+    margin-bottom: 10px;
+    position:relative;
+    left:65px;
+    object-fit: cover;
+}
+.classicfilm-pic {
+    height:130px;
+    width:100px;
+    border-radius: 15px;
+    margin-bottom: 10px;
+
+}
+.movie-img {
+    height:80px;
+    width:60px;
+    left:21px;
+    position: relative;
+}
+.movie-img:hover {
+    transform: scale(1.05);
+    transition: transform 0.3s ease-in-out;
+    filter: brightness(1.2);
+}
+.pop-movie {
+    height:450px;
+    width:290px;
+    border-radius: 20px;
+}
+
+.searched-movie {
+    object-fit: cover;
+}
+.search-pic {
+    height:40px;
+    width:40px;
+    position: relative;
+    right:50px;
+    top:20px;
+}
+.screaming-face {
+    position: absolute;
+    right: 20px; /* Position it in the header */
+    bottom:20px;
+    opacity: 0.7; /* Make it blend with the header */
+    mix-blend-mode: screen; /* Helps blend with the background */
+    z-index: 2; /* Ensure it stays visible over the header */
+}
+
+/*END IMAGE STYLING*/
+
+/*SIDEBAR STYLES*/
+.sidebar {
+    width: 200px; /* Adjust width as needed */
+    background: #111; /* Dark background for horror theme */
+    padding: 20px;
+    border-right: 3px solid crimson; /* Classic horror accent */
+    height: 156vh; /* Full height */
+    overflow-y: auto; /* Enables scrolling if too many movies */
+    display: flex;
+    flex-direction: column;
+    flex-shrink: 0;
+}
+/*END SIDEBAR STYLES*/
+
+/*TYPE STYLES*/
+.basic-typing-par {
+    display: inline-block;
+    color: #ffffff; /* White text for contrast */
+    font-family: 'Bebas Neue', sans-serif; /* Modern bold font */
+    font-size: .8rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    cursor: pointer;
+    position:relative;
+    top:11px;
+}
+.basic-typing-slh {
+    display: inline-block;
+    color: #ffffff; /* White text for contrast */
+    font-family: 'Bebas Neue', sans-serif; /* Modern bold font */
+    font-size: .8rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    cursor: pointer;
+    position:relative;
+    top:12px;
+}
+.category-description {
+    color: #f44336; /* Blood red text */
+    padding: 20px;
+    font-family: 'Bebas Neue', sans-serif; /* Bold, modern font */
+    font-size: .9rem;
+    text-align: center;
+    letter-spacing: 1px;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.9); /* Slight glow for eerie effect */
+    transition: transform 0.3s, box-shadow 0.3s; /* Smooth hover effects */
+  }
+.description {
+    font-size: 20px; /* Adjust as needed for readability */
+    color: #ffffff; /* Text color, modify as desired */
+    font-family: "Roboto", sans-serif;
+    font-weight: 100;
+    font-style: bold; 
+    margin:20px;
+}
+.fact-type {
+    font-family: "Roboto", sans-serif;
+    font-weight: 100;
+    font-style: bold; 
+    display: inline-block;
+    color: #ffffff; /* Brighter red for better visibility */
+    font-size: 10px; /* Increased font size for more impact */
+    text-shadow: 1px 1px 2px #0e0e0e, 0px 0px 5px #110f0f; /* Subtle and refined glow */
+    letter-spacing: 2px; /* Slight spacing for dramatic text */
+    text-transform: uppercase; /* Make it stand out */
+}
+
+.feat-cat-head {
+    font-size: 16px; /* Adjust as needed for readability */
+    color: #ffffff; /* Text color, modify as desired */
+    background: #ab0202; /* Optional: adds a background to distinguish from red line */
+    padding: 0 5px; /* Optional: space around the text */
+    display: inline-block; /* Ensures background padding works well */
+    font-family: "Roboto", sans-serif;
+    position: relative;
+    left:659px;
+    width:80px;
+}
+.feat-type {
+    font-size: 26px; /* Adjust as needed for readability */
+    color: #ffffff; /* Text color, modify as desired */
+    background: #ab0202; /* Optional: adds a background to distinguish from red line */
+    padding: 5px; /* Optional: space around the text */
+    display: inline-block; /* Ensures background padding works well */
+    font-family: "Special Elite", system-ui;
+    font-weight: 400;
+    font-style: normal;
+    margin:0px;
+    display:inline-block;
+    color:aliceblue;
+    border-radius: 20px;
+    padding-top: 5px;
+  }
+.film-type {
+    padding-left: 35px;
+    font-family: "Roboto", sans-serif;
+    font-weight: 100;
+    font-style: normal;
+}
+.gem-genre {
+    font-family: "Special Elite", system-ui;
+    font-size:27px;
+    text-shadow: 1px 2px 2px rgba(0,0,0,);
+    position: relative;
+    left:100px;
+}
+.gem-release {
+    font-family: "Special Elite", system-ui;
+    font-size:27px;
+    text-shadow: 1px 2px 2px rgba(0,0,0,);
+    position: relative;
+    left:300px;
+}
+.imdb-link {
+    text-decoration: none;
+    
+}
+.imdb-movie-link {
+    text-decoration: none;
+    display: flex;
+    
+}
+.movie-info {
+    margin:0px;
+    display: inline-block;
+    margin-left:20px;
+    font-family: "Roboto", sans-serif;
+    font-weight: 100;
+    font-style: normal;
+}
+.movie-infos {
+    margin:0px;
+    display: inline-block;
+    margin-left:20px;
+    font-family: "Roboto", sans-serif;
+    font-weight: 100;
+    font-style: normal;
+    position:relative;
+    top:20px;
+    left:10px;
+    color:#ffffff;
+}
+.movie-links {
+    display:flex;
+    justify-content: center;
+    color:rgb(255, 247, 247);
+    margin-top:9px;
+    font-family: "Roboto", sans-serif;
+    font-weight: 100;
+    font-weight: bold;
+    text-decoration: none;
+}
+.movie-links:hover {
+    color: #ff0000;
+    text-decoration: underline;
+}
+.movie-info {
+    font-size: 14px;
+    opacity: 0.8;
+  }
+.movie-title {
+    color: rgb(255, 247, 247);
+    font-family: "Roboto", sans-serif;
+    font-weight: 100;
+    font-weight: bold;
+    text-decoration: none;
+    text-align: center;
+    display: inline-block;
+  }
+.paranormal-info {
+    display:flex;
+    flex-direction: column;
+    margin:10px;
+    align-items: center;
+}
+ .paranormal-links {
+    color:rgb(255, 247, 247);
+    margin-top:9px;
+    margin-bottom:15px;
+    font-family: "Roboto", sans-serif;
+    font-weight: 100;
+    font-weight: bold;
+    text-decoration: none;
+    position: relative;
+    left:20px;
+}
+#searchBar:focus {
+    border: 2px solid #ff0000;
+    box-shadow: 0 0 10px rgba(255, 0, 0, 0.5);
+}
+#searchBar:hover::placeholder {
+    color: rgb(0, 0, 0); /* Change to the desired color */
+    font-style: italic; /* Optional: add styling */
+    opacity: 1; /* Optional: make the color fully opaque */
+    text-shadow:none;
+}
+.search-title {
+    position: relative;
+}
+.slasher-links {
+    color:rgb(255, 247, 247);
+    margin-top:9px;
+    margin-bottom:15px;
+    font-family: "Roboto", sans-serif;
+    font-weight: 100;
+    font-weight: bold;
+    text-decoration: none;
+    position: relative;
+    left:20px;
+}
+.title {
+    display:flex;
+    justify-content: center;
+    color:rgb(255, 247, 247);
+    margin-top:9px;
+    font-family: "Roboto", sans-serif;
+    font-weight: 100;
+    font-weight: bold;
+    text-decoration: none;
+}
+.typing {
+    font-size: 15px; /* Adjust as needed for readability */
+    color: #898787; /* Text color, modify as desired */
+    font-family: "Work Sans", sans-serif;
+    font-weight: 100;
+    font-style: thin; 
+    margin:20px;
+}
+.watchnow {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #8b0000; /* Dark red horror theme */
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 8px;
+    font-size: 18px;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-decoration: none;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+    box-shadow: 0 0 10px rgba(255, 0, 0, 0.7);
+    position: relative;
+    right:10px;
+    width:300px;
+}
+.watchnow:hover {
+    background-color: #ff0000; /* Brighter red on hover */
+    box-shadow: 0 0 20px rgba(255, 0, 0, 1);
+    transform: scale(1.05);
+}
+.watch-now {
+    position: relative;
+    left:10px;
+}
+
+/*END TYPE STYLES*/
+
+/* RESPONSIVE STYLES */
+@media screen and (max-width: 700px) {
+    .header-container {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .nav-menu {
+        margin-top: 20px;
+    }
+
+    .nav-links {
+        flex-direction: column;
+        gap: 15px;
+    }
+    
+    
+}
+/* END RESPONSIVE STYLES*/
+
+
+/* Arrow/Button Styles */
+.close {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    font-size: 24px;
+    cursor: pointer;
+    color: white;
+  }
+.left-arrow {
+    position:relative;
+    bottom:5px;
+}
+.pop-left {
+    position: relative;
+    height: 30px;
+    background-color: #2b2b2b; /* Dark gray for a sinister look */
+    color: #ff0000; /* Blood-red text */
+    border: 2px solid #ff0000; /* Blood-red border */
+    cursor: pointer;
+    padding: 10px;
+    z-index: 1;   
+    font-family: 'Creepster', cursive; /* Use a horror-style font like "Creepster" from Google Fonts */
+    text-shadow: 2px 2px 4px #000000; /* Eerie text shadow */
+    transition: all 0.3s ease; /* Smooth hover effect */
+    bottom:3vh;
+}
+.pop-right {
+    position: relative;
+    height: 30px;
+    background-color: #2b2b2b; /* Dark gray for a sinister look */
+    color: #ff0000; /* Blood-red text */
+    border: 2px solid #ff0000; /* Blood-red border */
+    cursor: pointer;
+    padding: 10px;
+    z-index: 1;   
+    font-family: 'Creepster', cursive; /* Use a horror-style font like "Creepster" from Google Fonts */
+    text-shadow: 2px 2px 4px #000000; /* Eerie text shadow */
+    transition: all 0.3s ease; /* Smooth hover effect */
+    bottom:3.7vh;
+    margin-top:5px;
+}
+.scroll-left.comedy-left {
+    position: relative !important;
+    height: 30px;
+    background-color: #2b2b2b; /* Dark gray for a sinister look */
+    color: #ff0000; /* Blood-red text */
+    border: 2px solid #ff0000; /* Blood-red border */
+    cursor: pointer;
+    padding: 10px;
+    z-index: 1;   
+    font-family: 'Creepster', cursive; /* Use a horror-style font like "Creepster" from Google Fonts */
+    text-shadow: 2px 2px 4px #000000; /* Eerie text shadow */
+    transition: all 0.3s ease; /* Smooth hover effect */
+    right:262px;
+    bottom:2px;
+}
+
+.scroll-right.comedy-right {
+    position: relative !important;
+    height: 30px;
+    background-color: #2b2b2b; /* Dark gray for a sinister look */
+    color: #ff0000; /* Blood-red text */
+    border: 2px solid #ff0000; /* Blood-red border */
+    cursor: pointer;
+    padding: 10px;
+    z-index: 1;   
+    font-family: 'Creepster', cursive; /* Use a horror-style font like "Creepster" from Google Fonts */
+    text-shadow: 2px 2px 4px #000000; /* Eerie text shadow */
+    transition: all 0.3s ease; /* Smooth hover effect */
+    right:266px;
+    bottom:2px;
+    margin-top:5px;
+}
+.scroll-left.psycho-left {
+    position: relative !important;
+    height: 30px;
+    background-color: #2b2b2b; /* Dark gray for a sinister look */
+    color: #ff0000; /* Blood-red text */
+    border: 2px solid #ff0000; /* Blood-red border */
+    cursor: pointer;
+    padding: 10px;
+    z-index: 1;   
+    font-family: 'Creepster', cursive; /* Use a horror-style font like "Creepster" from Google Fonts */
+    text-shadow: 2px 2px 4px #000000; /* Eerie text shadow */
+    transition: all 0.3s ease; /* Smooth hover effect */
+    right:403px;
+    bottom:2px;
+}
+.scroll-right.psycho-right {
+    position: relative;
+    height: 30px;
+    background-color: #2b2b2b; /* Dark gray for a sinister look */
+    color: #ff0000; /* Blood-red text */
+    border: 2px solid #ff0000; /* Blood-red border */
+    cursor: pointer;
+    padding: 10px;
+    z-index: 1;   
+    font-family: 'Creepster', cursive; /* Use a horror-style font like "Creepster" from Google Fonts */
+    text-shadow: 2px 2px 4px #000000; /* Eerie text shadow */
+    transition: all 0.3s ease; /* Smooth hover effect */
+    right:407px;
+    bottom:2px;
+    margin-top:5px;
+}
+.right-arrow {
+    position:relative;
+    bottom:5px;
+}
+.scroll-right {
+    position: relative;
+    height: 30px;
+    background-color: #2b2b2b; /* Dark gray for a sinister look */
+    color: #ff0000; /* Blood-red text */
+    border: 2px solid #ff0000; /* Blood-red border */
+    cursor: pointer;
+    padding: 10px;
+    z-index: 1;   
+    font-family: 'Creepster', cursive; /* Use a horror-style font like "Creepster" from Google Fonts */
+    text-shadow: 2px 2px 4px #000000; /* Eerie text shadow */
+    transition: all 0.3s ease; /* Smooth hover effect */
+    right:178px;
+    bottom:2px;
+    margin-top:5px;
+}
+.scroll-arrow.left {
+    left: 0;
+}
+
+.scroll-arrow.right {
+    right: 0;
+}
+
+  .scroll-left {
+    position: relative;
+    height: 30px;
+    background-color: #2b2b2b; /* Dark gray for a sinister look */
+    color: #ff0000; /* Blood-red text */
+    border: 2px solid #ff0000; /* Blood-red border */
+    cursor: pointer;
+    padding: 10px;
+    z-index: 1;   
+    font-family: 'Creepster', cursive; /* Use a horror-style font like "Creepster" from Google Fonts */
+    text-shadow: 2px 2px 4px #000000; /* Eerie text shadow */
+    transition: all 0.3s ease; /* Smooth hover effect */
+    right:175px;
+    bottom:2px;
+}
+.slsh-left {
+    position: relative;
+    height: 30px;
+    background-color: #2b2b2b; /* Dark gray for a sinister look */
+    color: #ff0000; /* Blood-red text */
+    border: 2px solid #ff0000; /* Blood-red border */
+    cursor: pointer;
+    padding: 10px;
+    z-index: 1;   
+    font-family: 'Creepster', cursive; /* Use a horror-style font like "Creepster" from Google Fonts */
+    text-shadow: 2px 2px 4px #000000; /* Eerie text shadow */
+    transition: all 0.3s ease; /* Smooth hover effect */
+    right:178px;
+    bottom:2px;
+    margin-top:5px;
+}
+.slsh-right {
+    position: relative;
+    height: 30px;
+    background-color: #2b2b2b; /* Dark gray for a sinister look */
+    color: #ff0000; /* Blood-red text */
+    border: 2px solid #ff0000; /* Blood-red border */
+    cursor: pointer;
+    padding: 10px;
+    z-index: 1;   
+    font-family: 'Creepster', cursive; /* Use a horror-style font like "Creepster" from Google Fonts */
+    text-shadow: 2px 2px 4px #000000; /* Eerie text shadow */
+    transition: all 0.3s ease; /* Smooth hover effect */
+    right:182px;
+    bottom:2px;
+    margin-top:5px;
+}
+.supntral-left {
+    position: relative;
+    height: 30px;
+    background-color: #2b2b2b; /* Dark gray for a sinister look */
+    color: #ff0000; /* Blood-red text */
+    border: 2px solid #ff0000; /* Blood-red border */
+    cursor: pointer;
+    padding: 10px;
+    z-index: 1;   
+    font-family: 'Creepster', cursive; /* Use a horror-style font like "Creepster" from Google Fonts */
+    text-shadow: 2px 2px 4px #000000; /* Eerie text shadow */
+    transition: all 0.3s ease; /* Smooth hover effect */
+    right:254px;
+    bottom:2px;
+    margin-top:5px;
+}
+.supntral-right {
+    position: relative;
+    height: 30px;
+    background-color: #2b2b2b; /* Dark gray for a sinister look */
+    color: #ff0000; /* Blood-red text */
+    border: 2px solid #ff0000; /* Blood-red border */
+    cursor: pointer;
+    padding: 10px;
+    z-index: 1;   
+    font-family: 'Creepster', cursive; /* Use a horror-style font like "Creepster" from Google Fonts */
+    text-shadow: 2px 2px 4px #000000; /* Eerie text shadow */
+    transition: all 0.3s ease; /* Smooth hover effect */
+    right:258px;
+    bottom:2px;
+    margin-top:5px;
+}
+.basic-typing {
+    display: inline-block;
+    color: #ffffff; /* White text for contrast */
+    font-family: 'Bebas Neue', sans-serif; /* Modern bold font */
+    font-size: .8rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    cursor: pointer;
+    position:relative;
+  }
+
+  
+/* Hover effect for the button */
+.pop-left:hover {
+    background-color: #ff0000; /* Blood-red background on hover */
+    color: #2b2b2b; /* Dark text */
+    box-shadow: 0px 0px 10px 2px #ff0000; /* Glowing red effect */
+}
+.pop-right:hover {
+    background-color: #ff0000; /* Blood-red background on hover */
+    color: #2b2b2b; /* Dark text */
+    box-shadow: 0px 0px 10px 2px #ff0000; /* Glowing red effect */
+}
+.scroll-left:hover {
+    background-color: #ff0000; /* Blood-red background on hover */
+    color: #2b2b2b; /* Dark text */
+    box-shadow: 0px 0px 10px 2px #ff0000; /* Glowing red effect */
+}
+
+.scroll-right:hover {
+    background-color: #ff0000;
+    color: #2b2b2b;
+    box-shadow: 0px 0px 10px 2px #ff0000;
+}
+/* Active/Pressed state */
+.pop-right:active {
+    transform: translateY(-23%) scale(0.95);
+    box-shadow: 0px 0px 15px 5px #ff0000; 
+}
+
+.pop-left:active {
+    transform: translateY(-23%) scale(0.95);
+    box-shadow: 0px 0px 15px 5px #ff0000; 
+}
+.scroll-right:active {
+    transform: translateY(-23%) scale(0.95);
+    box-shadow: 0px 0px 15px 5px #ff0000; 
+}
+
+.scroll-left:active {
+    transform: translateY(-23%) scale(0.95);
+    box-shadow: 0px 0px 15px 5px #ff0000; 
+}
+/* END active state */
+
+/* SECTION STYLES */
+
+.section{
+    display: flex;
+    flex-direction: column;
+    border-bottom: 3px solid crimson;   
+}
+.section1 {
+    display: flex;
+    flex-direction: row;
+    border-bottom: 3px solid crimson;   
+}
+.hidden-gems {
+    display: flex;
+    flex-direction: column;
+}
+.monthly-section {
+    display: flex;
+    margin-top:40px;
+    justify-content: space-evenly;
+    border-bottom: 2px solid rgb(238, 0, 0); /* Adjust thickness and color */
+    height:620px;
+}
+.trending-section {
+    display:flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+
+}
+/* END SECTION STYLES */
+
+/* RANDOM STYLES */
+.play-icon {
+    position: relative;
+    right:138px;
+}
+.link-holder {
+    display: inline-block;
+    background: linear-gradient(145deg, #4d0000, #870000); /* Deep gradient from dark red to brighter red */
+    color: #ffffff; /* White text for contrast */
+    font-family: 'Bebas Neue', sans-serif; /* Modern bold font */
+    font-size: .8rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    padding:10px 30px;
+    margin-top: 20px;
+    border: none; /* Clean look with no border */
+    border-radius: 50px; /* Rounded edges for a premium look */
+    text-align: center;
+    text-decoration: none;
+    transition: all 0.3s ease-in-out;
+    box-shadow: 0 8px 15px rgba(255, 0, 0, 0.4), inset 0 -3px 0 rgba(0, 0, 0, 0.3); /* Glow and depth */
+    overflow: hidden;
+    cursor: pointer;
+    position:relative;
+    height:40px;
+}
+.link-holder a:hover {
+    animation: pulse 1.5s infinite;
+}
+
+@keyframes pulse {
+    0%, 100% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.1);
+    }
+}
+.link-holder::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.2); /* Shine effect */
+    transform: skewX(-20deg);
+    transition: all 0.3s ease-in-out;
+}
+.link-holder:hover::before {
+    left: 100%; /* Shine moves across the button */
+  }
+  .link-container {
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+    width: auto;
+  }
+  .quality {
+    border: 1px solid #110f0f;
+    border-radius: 50px; /* Large value to create fully rounded ends */
+    padding-left: 13px;
+    padding-top: 5px;
+    background-color: #560f0f;
+    font-family: 'Work Sans', sans-serif;
+    font-size: 13px;
+    display: inline-block; /* Ensures the element only takes up as much width as needed */
+    line-height: 1; /* Reduces extra space caused by line height */
+    height:19px;
+    width:30px;
+  }
+.rank-number {
+    font-family: 'Eater', cursive; /* Horror-themed font */
+    font-size: 3.5rem;
+    text-align: center;
+    text-transform: uppercase;
+    position: relative;
+    display:inline-block;
+    left:70px;
+    bottom:80px;
+    text-shadow: 0 0 5px #ff4444, 0 0 10px #ff4444, 0 0 20px #ff4444;
+}
+.rating {
+    border: 1px solid #110f0f;
+    border-radius: 50px; /* Large value to create fully rounded ends */
+    padding-left: 13px;
+    padding-top: 5px;
+    background-color: #302d2d;
+    font-family: 'Work Sans', sans-serif;
+    font-size: 13px;
+    display: inline-block; /* Ensures the element only takes up as much width as needed */
+    line-height: 1; /* Reduces extra space caused by line height */
+    height:19px;
+    width:30px;
+    color: #ff0000;
+}
+.stars {
+    margin-right: 10px;
+}
+.search-title {
+    display: flex;
+    justify-content: center;
+    color: rgb(255, 247, 247);
+    margin-top: 9px;
+    font-family: "Roboto", sans-serif;
+    font-weight: 100;
+    font-weight: bold;
+    text-decoration: none;
+}
+.year {
+    margin-right: 10px;
+    top:4px;
+    position: relative;
+}
+
+
+/* END RANDOM STYLES*/
+/* Category-Specific Overrides */
+.link-holder-par {
+    left: 33px;
+    bottom: 10px;
+    background: linear-gradient(145deg, #023b97, #030f95) !important;
+    box-shadow: 0 8px 15px rgba(0, 102, 255, 0.4), inset 0 -3px 0 rgba(0, 0, 0, 0.3) !important; /* Glow and depth */
+}
+
+.link-holder-slh {
+    left: 14px;
+    top: 15px;
+}
+.link-holder-psy {
+    background: linear-gradient(145deg, #461681, #400873) !important;
+    box-shadow: 0 8px 15px rgba(91, 2, 246, 0.4), inset 0 -3px 0 rgba(0, 0, 0, 0.3) !important; /* Glow and depth */
+    left: 33px;
+}
+.lengths {
+    position: relative;
+    margin-left: 5px;
+    top:3px;
+}
+

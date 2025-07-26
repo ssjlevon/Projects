@@ -1,0 +1,71 @@
+/* Style for the container */
+.container {
+    margin-top: 20px;
+  }
+  
+  /* Card styles */
+  .card {
+    border: none; /* Remove border for a cleaner look */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
+    transition: transform 0.3s, box-shadow 0.3s; /* Smooth hover effect */
+    background-color: #2b2b2b; /* Dark background for horror vibe */
+    color: #ffffff; /* White text for contrast */
+  }
+  
+  .card:hover {
+    transform: translateY(-10px); /* Lift effect on hover */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.4); /* More pronounced shadow */
+  }
+  
+  /* Card image styles */
+  .card-img-top {
+    height: 250px; /* Fixed height for consistency */
+    object-fit: cover; /* Ensure images fit well without distortion */
+    border-bottom: 2px solid #dc3545; /* Red border for a horror theme */
+  }
+  
+  /* Card body text */
+  .card-title {
+    font-family: 'Amatic SC', cursive; /* Spooky font */
+    font-size: 1.5rem; /* Larger title size */
+    text-align: center;
+  }
+  
+  .card-text {
+    font-family: 'Raleway', sans-serif; /* Clean font for readability */
+    font-size: 0.9rem; /* Smaller text size */
+    text-align: center;
+    margin-top: 10px;
+    color: #c0c0c0; /* Lighter text for contrast */
+  }
+  
+  /* Card layout spacing */
+  .card-body {
+    padding: 15px;
+  }
+  
+  /* Overall grid spacing */
+  .row > .col-sm-6 {
+    margin-bottom: 20px; /* Space between rows */
+  }
+  
+  /* Responsive design tweaks */
+  @media (max-width: 576px) {
+    .card-img-top {
+      height: 200px; /* Adjust image height for smaller screens */
+    }
+    .card-title {
+      font-size: 1.2rem;
+    }
+    .card-text {
+      font-size: 0.8rem;
+    }
+  }
+
+
+  .film-pics {
+    height:270px;
+    width:210px;
+    border-radius: 15px;
+    margin-bottom: 10px;
+}

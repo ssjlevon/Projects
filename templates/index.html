@@ -1,0 +1,924 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="A brief description of your webpage for SEO.">
+  <meta name="author" content="Your Name">
+  <meta name="keywords" content="keywords, describing, your, page">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&family=Questrial&family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Special+Elite&family=Yantramanav:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/static/styles.css"> <!-- Link to external CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+	<title>OatmealHorror</title>
+</head>
+<body class="page-body">
+ 
+  <header class="page-header">
+    <div class="header-container">
+      <div class="logo-and-title">
+        <img class="chucky" src="/images/chucky.png" alt="Chucky" loading="lazy">
+        <h1 class="page-header1">oatmealhorror</h1>
+      </div>
+      <nav class="nav-menu">
+        <ul class="nav-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="categories.html" target="blank">Categories</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+    
+    <div class="search-box" id="searchBarContainer">
+      <input type="text" id="searchBar" placeholder="Search horror movies..." oninput="handleSearch()" />
+      <img class="search-pic" src="/images/eye.png" loading="lazy" alt="Chucky">
+      <div id="movieContainer"></div>
+    </div>
+    
+    <div class="featured-head">
+      <h3 class="feat-type">EDITOR'S PICK:</h3>
+    </div>
+    
+    <div class="featured-container">
+      <div class="item-movie2">
+        <div class="link-container">
+          <a href="https://www.imdb.com/title/tt10403420/?ref_=nv_sr_srsg_5_tt_7_nm_1_in_0_q_terrif" target="_blank" rel="noopener noreferrer">
+            <img class="film-pics2" src="https://image.tmdb.org/t/p/original/rr7ygjnaoZIR6G3uD7tpeZIEvqN.jpg" loading="lazy" alt="It Follows">
+            <img class="featuredlogo" src="https://image.tmdb.org/t/p/original/pInox8FhEKMXMSlx2m5xHFvJoZc.png" loading="lazy" alt =""  target="_blank"> 
+          </a>
+        </div>
+      </div>
+      
+      <div class="item-movie3">
+        <div class="link-container">
+          <a href="https://www.imdb.com/title/tt1034415/?ref_=nv_sr_srsg_0_tt_8_nm_0_in_0_q_suspiria" target="_blank" rel="noopener noreferrer">
+            <img class="film-pics2" src="https://image.tmdb.org/t/p/original/dDwzMvjEfzldnPJwOwqYDHTjO4a.jpg" loading="lazy" alt="It Follows">
+            <img class="featuredlogo suspiria" src="https://image.tmdb.org/t/p/original/tjbSuL8GCaheOo4NLqvr5mS0SE9.png" loading="lazy" alt =""  target="_blank"> 
+          </a>
+        </div>
+      </div>
+        
+      <div class="item-movie4">
+        <div class="link-container">
+          <a href="https://www.imdb.com/title/tt10365998/?ref_=nv_sr_srsg_0_tt_8_nm_0_in_0_q_infin" target="_blank" rel="noopener noreferrer">
+            <img class="film-pics2" src="https://image.tmdb.org/t/p/original/1xhcEecvRJXQ2OAVO7l9btlrN6D.jpg" loading="lazy" alt="It Follows">
+            <img class="featuredlogo pool" src="https://image.tmdb.org/t/p/original/b02cNj2tvEHKbnLdqtojir7oQwV.png" loading="lazy" alt =""  target="_blank"> 
+          </a>
+        </div>
+      </div>
+      
+      <div class="item-movie5">
+        <div class="link-container">
+          <a href="https://www.imdb.com/title/tt17526714/?ref_=nv_sr_srsg_1_tt_7_nm_0_in_0_q_the%2520sub" target="_blank" rel="noopener noreferrer">
+            <img class="film-pics2" src="https://image.tmdb.org/t/p/original/bFPqSvR2EmWQ9AlzWkC801XpoAZ.jpg" loading="lazy" alt="It Follows">
+            <img class="featuredlogo substance" src="https://image.tmdb.org/t/p/original/1yw5B2rL7vneZq2RcWKqNVVjlOG.png" loading="lazy" alt =""  target="_blank"> 
+          </a>
+        </div>
+      </div>
+      
+      <div class="item-movie5">
+        <div class="link-container">
+          <a href="https://www.imdb.com/title/tt13345606/?ref_=nv_sr_srsg_0_tt_8_nm_0_in_0_q_evil%2520dea" target="_blank" rel="noopener noreferrer">
+            <img class="film-pics2" src="https://image.tmdb.org/t/p/original/aAgGrfBwna1nO4M2USxwFgK5O0t.jpg" loading="lazy" alt="It Follows">
+            <img class="featuredlogo substance" src="https://image.tmdb.org/t/p/original/6I8LOR89lv0Egh9CEkl7rYFK0ow.png" loading="lazy" alt =""  target="_blank"> 
+          </a>
+        </div>
+      </div>
+      
+      
+      
+      
+      
+    </div>
+    
+  </header>
+  
+  <h1 class="topmonthheader">TOP HORROR RECCOMENDATIONS OF THE MONTH</h1>
+  <!--MONTHLY FEATURED-->
+  <section class="monthly-section">
+    <div class="top5slash">
+      <span class="rank-number">1</span>
+      
+      <div class="item-movie">
+        <a href="https://www.imdb.com/title/tt1288558/?ref_=nv_sr_srsg_0_tt_8_nm_0_in_0_q_evil%2520dead" target="blank" rel="noopener noreferrer">
+          <img class="film-pics1" src="https://image.tmdb.org/t/p/original/1gDV0Lm9y8ufIKzyf0h0GBgb9Zj.jpg" loading="lazy" alt="Jeepers Creepers">
+        </a>
+        <a class="movie-links" href="https://www.imdb.com/title/tt1288558/?ref_=nv_sr_srsg_0_tt_8_nm_0_in_0_q_evil%2520dead" target="_blank" rel="noopener noreferrer">EVIL DEAD</a>
+
+        <div class="movie-description">
+          <div class="head">
+            <h3 class="title">EVIL DEAD</h3>
+            <div class="meta-info">
+              <span class="quality">HD</span><span class="rating">NR</span>
+            <div class="meta-info2">
+              <span class="year">2013</span><span class="stars">⭐6.7</span><span class="lengths">91 min</span>
+            </div>
+            </div>
+          </div>
+
+          <div class="author">
+            <span class="typing">Country:</span><a style="position: relative; right: 15px;font-weight: bold;text-decoration: none;color: #ffffff;font-family: Roboto, sans-serif;" href="index.html" target ="blank">USA</a><br><br><span class="typing">Genre:</span><a style="position: relative; right: 15px;font-weight: bold;text-decoration: none;color: #ffffff;font-family: Roboto, sans-serif;" href="index.html" target="_blank">Slasher</a>
+            <p style="padding-top: 30px; font-size: 15.5px;
+            color: #928e8e;
+            font-family:Work Sans, sans-serif;
+            font-weight: 100;
+            font-style: bold; 
+            margin:20px;position: relative; bottom:10px;">A group of friends retreats to a remote cabin, unknowingly awakening an ancient evil after reading from the Book of the Dead. As a demonic force...</p>
+
+             <button class="watchnow" onclick="openTrailer('movie1', 'https://www.youtube.com/embed/vTGHA33Xyh4')">
+              <span class="watch-now">WATCH NOW</span>
+              <i class="fas fa-play play-icon"></i>
+             </button>
+
+
+             <div id="movie1Modal" class="modal">
+              <div class="modal-content">
+                <button class="close" onclick="closeTrailer('movie1')">&times;</button>
+                <iframe id="movie1TrailerFrame" title="mvtrailer" width="560" height="315" src="https://www.youtube.com/embed/vTGHA33Xyh4" allow=" encrypted-media; gyroscope; fullscreen; picture-in-picture"></iframe>
+              </div>
+             </div>
+        
+          </div>
+        </div>
+      </div>
+       
+      <span class="rank-number">2</span>
+      
+      <div class="item-movie1">
+        <a href="https://www.imdb.com/title/tt9764362/?ref_=nv_sr_srsg_0_tt_8_nm_0_in_0_q_the%2520menu" target="_blank" rel="noopener noreferrer">
+          <img class="film-pics1" src="https://image.tmdb.org/t/p/original/fPtUgMcLIboqlTlPrq0bQpKK8eq.jpg" loading="lazy" alt="Smile" >
+        </a>
+        <a class="movie-links" href="https://www.imdb.com/title/tt9764362/?ref_=nv_sr_srsg_0_tt_8_nm_0_in_0_q_the%2520menu" target="_blank" rel="noopener noreferrer">The Menu</a>
+
+        <div class="movie-description">
+          <div class="head">
+            <h3 class="title">THE MENU</h3>
+            <div class="meta-info">
+              <span class="quality">HD</span><span class="rating">R</span>
+              <div class="meta-info2">
+                <span class="year">2022</span><span class="stars">⭐7.5</span><span class="lengths">107 min</span>
+              </div>
+            </div>
+          </div>
+        
+          <div class="author">
+            <span class="typing">Country:</span><a style="position: relative; right: 15px;font-weight: bold;text-decoration: none;color: #ffffff;font-family: Roboto, sans-serif;" href="index.html" target="blank">USA</a><br><br>
+            <span class="typing">Genre:</span><a style="position: relative; right: 15px;font-weight: bold;text-decoration: none;color: #ffffff;font-family: Roboto, sans-serif;" href="index.html" target="_blank">Horror, Drama</a>
+            <p style="padding-top: 30px; font-size: 15.5px;
+              color: #928e8e;
+              font-family: Work Sans, sans-serif;
+              font-weight: 100;
+              font-style: bold; 
+              margin: 20px; position: relative; bottom: 10px;">
+             A group of elite diners travels to a secluded island for an exclusive meal by a renowned chef. As the courses unfold, they realize the night’s menu holds shocking and deadly surprises...
+            </p>
+
+            <button class="watchnow" onclick="openTrailer('movie2', 'https://www.youtube.com/embed/C_uTkUGcHv4')">
+              <span class="watch-now">WATCH NOW</span>
+              <i class="fas fa-play play-icon"></i>
+             </button>
+
+
+             <div id="movie2Modal" class="modal">
+              <div class="modal-content">
+                <button class="close" onclick="closeTrailer('movie2')">&times;</button>
+                <iframe id="movie2TrailerFrame" title="mvtrailer" width="560" height="315" src="https://www.youtube.com/embed/C_uTkUGcHv4" allow=" encrypted-media; gyroscope; fullscreen; picture-in-picture"></iframe>
+              </div>
+             </div>
+
+          </div>
+        </div>
+
+      </div>
+      
+      <span class="rank-number">3</span>
+      
+      <div class="item-movie">
+        <a href="https://www.imdb.com/title/tt26470109/?ref_=nv_sr_srsg_0_tt_8_nm_0_in_0_q_oddity" target="_blank" rel="noopener noreferrer">
+          <img class="film-pics1" src="https://image.tmdb.org/t/p/original/3Z9c1tbUhP0QruRjczPHnbx3U2D.jpg" loading="lazy" alt>
+        </a>
+        <a class="movie-links" href="https://www.imdb.com/title/tt26470109/?ref_=nv_sr_srsg_0_tt_8_nm_0_in_0_q_oddity" target="_blank" rel="noopener noreferrer">ODDITY</a>
+        
+        <div class="movie-description">
+          <div class="head">
+            <h3 class="title">ODDITY</h3>
+            <div class="meta-info">
+              <span class="quality">HD</span><span class="rating">R</span>
+              <div class="meta-info2">
+                <span class="year">2024</span><span class="stars">⭐7.0</span><span class="lengths">98 min</span>
+              </div>
+            </div>
+          </div>
+        
+          <div class="author">
+            <span class="typing">Country:</span><a style="position: relative; right: 15px;font-weight: bold;text-decoration: none;color: #ffffff;font-family: Roboto, sans-serif;" href="index.html" target="blank">USA</a><br><br>
+            <span class="typing">Genre:</span><a style="position: relative; right: 15px;font-weight: bold;text-decoration: none;color: #ffffff;font-family: Roboto, sans-serif;" href="index.html" target="_blank">Horror, Thriller</a>
+            <p style="padding-top: 30px; font-size: 15.5px;
+              color: #928e8e;
+              font-family: Work Sans, sans-serif;
+              font-weight: 100;
+              font-style: bold; 
+              margin: 20px; position: relative; bottom: 10px;">
+              After her twin sister's murder, a blind woman with psychic abilities moves into the house where it happened. Along with a life-size wooden mannequin, she uncovers dark secrets lurking within...
+            </p>
+
+            <button class="watchnow" onclick="openTrailer('movie3', 'https://www.youtube.com/embed/tLNDvnv8B3A')">
+              <span class="watch-now">WATCH NOW</span>
+              <i class="fas fa-play play-icon"></i>
+             </button>
+
+
+             <div id="movie3Modal" class="modal">
+              <div class="modal-content">
+                <button class="close" onclick="closeTrailer('movie3')">&times;</button>
+                <iframe id="movie3TrailerFrame" title="mvtrailer" width="560" height="315" src="https://www.youtube.com/embed/tLNDvnv8B3A" allow=" encrypted-media; gyroscope; fullscreen; picture-in-picture"></iframe>
+              </div>
+             </div>
+          </div>
+        </div>
+
+
+      </div>
+      
+      <span class="rank-number">4</span>
+      
+      <div class="item-movie">
+        <a href="https://www.imdb.com/title/tt4954522/?ref_=nv_sr_srsg_7_tt_4_nm_3_in_0_q_raw%2520" target="_blank" rel="noopener noreferrer">
+          <img class="film-pics1" src="https://image.tmdb.org/t/p/original/kc8jT1MAiKM0iwdjAwC5lQrTNry.jpg" loading="lazy" alt>
+        </a>
+        <a class="movie-links" href="https://www.imdb.com/title/tt4954522/?ref_=nv_sr_srsg_7_tt_4_nm_3_in_0_q_raw%2520" target="_blank" rel="noopener noreferrer">RAW</a>
+
+        <div class="movie-description">
+          <div class="head">
+            <h3 class="title">RAW</h3>
+            <div class="meta-info">
+              <span class="quality">HD</span><span class="rating">R</span>
+              <div class="meta-info2">
+                <span class="year">2016</span><span class="stars">⭐7.1</span><span class="lengths">99 min</span>
+              </div>
+            </div>
+          </div>
+        
+          <div class="author">
+            <span class="typing">Country:</span><a style="position: relative; right: 15px;font-weight: bold;text-decoration: none;color: #ffffff;font-family: Roboto, sans-serif;" href="index.html" target="blank">USA</a><br><br>
+            <span class="typing">Genre:</span><a style="position: relative; right: 15px;font-weight: bold;text-decoration: none;color: #ffffff;font-family: Roboto, sans-serif;" href="index.html" target="_blank">Horror, Drama</a>
+            <p style="padding-top: 30px; font-size: 15.5px;
+              color: #928e8e;
+              font-family: Work Sans, sans-serif;
+              font-weight: 100;
+              font-style: bold; 
+              margin: 20px; position: relative; bottom: 10px;">
+              A shy vegetarian begins her first year at veterinary school, where a brutal hazing ritual awakens an insatiable craving for raw meat. As her hunger grows, so does a terrifying transformation...
+            </p>
+
+             <button class="watchnow" onclick="openTrailer('movie4', 'https://www.youtube.com/embed/gFlXVX2af_Y')">
+              <span class="watch-now">WATCH NOW</span>
+              <i class="fas fa-play play-icon"></i>
+             </button>
+
+
+             <div id="movie4Modal" class="modal">
+              <div class="modal-content">
+                <button class="close" onclick="closeTrailer('movie4')">&times;</button>
+                <iframe id="movie4TrailerFrame" title="mvtrailer" width="560" height="315" src="https://www.youtube.com/embed/gFlXVX2af_Y" allow=" encrypted-media; gyroscope; fullscreen; picture-in-picture"></iframe>
+              </div>
+             </div>
+          </div>
+        </div>
+
+
+      </div>
+
+      
+      
+    </div>
+  </section>
+  <!--MONTHLY FEATURED END-->
+<!--Main Section Here-->
+  <main style="padding:20px;">
+    <img class="bg-photo" src="/images/bg-face.jpg" loading="lazy" alt="collage">
+    <div class="container">
+      
+      <!--SIDEBAR STARTS HERE-->
+            <aside class="sidebar">
+              <h1 class="classicheader">CLASSIC HORROR</h1>
+  
+              <div class="classic-list">
+                <a href="https://www.imdb.com/title/tt0387564/?ref_=nv_sr_srsg_1_tt_7_nm_0_in_0_q_SAW" target="_blank">
+                  <img class="classicfilm-pic" src="https://image.tmdb.org/t/p/original/4da0TS3iQ1IzuyhDS8elgkmOfrN.jpg" alt="SAW">
+                </a>
+                <div class="film-overlay">
+                    <p class="movie-title">SAW(2004)</p>
+                    <button onclick="openTrailer('scream', 'https://www.youtube.com/embed/zaANSeQ3La4')">Watch Trailer</button>
+                  </div>
+              </div>
+  
+              <div class="classic-list">
+                <a href="https://www.imdb.com/title/tt0075005/?ref_=nv_sr_srsg_3_tt_8_nm_0_in_0_q_THE%2520OMEN" target="_blank">
+                  <img class="classicfilm-pic" src="https://image.tmdb.org/t/p/original/mDcjjEu1fMNmsXi4l4D8IftlTix.jpg" alt="THE OMEN">
+                </a>
+                  <div class="film-overlay">
+                    <p class="movie-title">THE OMEN</p>
+                    <button onclick="openTrailer('scream', 'https://www.youtube.com/embed/sS-sXcx30O4')">Watch Trailer</button>
+                  </div>
+              </div>
+  
+              <div class="classic-list">
+                <a href="https://www.imdb.com/title/tt0063350/?ref_=nv_sr_srsg_0_tt_5_nm_3_in_0_q_night%2520of%2520the%2520livi" target="_blank">
+                  <img class="classicfilm-pic" src="https://image.tmdb.org/t/p/original/inNUOa9WZGdyRXQlt7eqmHtCttl.jpg" alt="NIGHT OF THE LIVING DEAD">
+                </a>
+                  <div class="film-overlay">
+                    <p class="movie-title">NIGHT OF THE LIVING DEAD</p>
+                    <button onclick="openTrailer('scream', 'https://www.youtube.com/embed/pd5a0gs-UCQ')">Watch Trailer</button>
+                  </div>
+              </div>
+      
+            </aside>
+      <!--SIDEBAR ENDS HERE-->
+      
+      <div class="content-wrapper">
+
+        <div class="fun-fact">
+          <span class="lightbulb">💡</span>
+          <p class="funfactheader">Fun Fact:</p>
+          <p class="fact-type">
+            Did you know that in The Exorcist (1973), director William Friedkin went to extreme 
+            lengths to get genuine reactions from the actors? 
+          </p>
+        </div>
+        
+        <section id="horror-movie-container" class ="trending-section">
+          <h2 class="trending-header">Trending Horror Movies</h2>
+          <div class="popular-container">
+
+            
+  
+            <div class="popular-wrapper">
+              <div class="trending-movies">
+                <div id="horrorContainer"></div>
+              
+            </div>
+  
+          </div>
+
+          </div>
+  
+      </section>
+
+      </div>
+    
+        <!-- FUN FACT (Stacks on top) -->
+       
+             
+          
+          <!-- Modal Structure -->
+             <div id="screamModal" class="modal">
+               <div class="modal-content">
+                 <button class="close" onclick="closeTrailer('scream')">&times;</button>
+                 <iframe id="screamTrailerFrame" title="scream" width="560" height="315" src="https://www.youtube.com/embed/i3J6ACKQ7K0" allow=" encrypted-media; gyroscope; fullscreen; picture-in-picture"></iframe>
+               </div>
+             </div>
+
+    </div>
+      
+    <!--CATEGORY SCROLL START-->
+    <section class="section">
+
+      <h3 class="feat-cat-head">Categories</h3>
+      <div class="category-container">
+        <h3 class="slsh-category">Slashers</h3>
+        <button class="scroll-left slsh-left">
+          <span class="left-arrow">❮</span>
+        </button>
+        <button class="scroll-right slsh-right">
+          <span class="right-arrow">❯</span>
+        </button>
+        <div class="scroll-wrapper">
+          <div class="horror-category">
+  
+            <div class="item-movie">
+              <a href="https://www.imdb.com/title/tt0117571/?ref_=nv_sr_srsg_1_tt_7_nm_0_in_0_q_scream" target="_blank" rel="noopener noreferrer">
+                <img class="film-pics" src="/images/scream.jpg" loading="lazy" alt="Scream">
+              </a>
+              <div class="film-description">
+                <p class="movie-info">1996</p><span class="film-type">Horror/Slasher</span><br>
+              </div>
+              <a class="movie-links" href="https://www.imdb.com/title/tt0117571/?ref_=nv_sr_srsg_1_tt_7_nm_0_in_0_q_scream" target="_blank" rel="noopener noreferrer">Scream</a>
+            </div>
+            
+            <div class="item-movie">
+              <a href="https://www.imdb.com/title/tt18925334/?ref_=nv_sr_srsg_0_tt_5_nm_3_in_0_q_pearl" target="_blank" rel="noopener noreferrer">
+                <img class="film-pics" src="https://image.tmdb.org/t/p/original/z5uIG81pXyHKg7cUFIu84Wjn4NS.jpg" loading="lazy" alt="Pearl">
+              </a>
+              <div class="film-description">
+                <p class="movie-info">2022</p><span class="film-type">Horror/Slasher</span><br>
+              </div>
+              <a class="movie-links" href="https://www.imdb.com/title/tt18925334/?ref_=nv_sr_srsg_0_tt_5_nm_3_in_0_q_pearl" target="_blank" rel="noopener noreferrer">Pearl</a>
+            </div>
+            
+            <div class="item-movie">
+              <a href="https://www.imdb.com/title/tt27911000/?ref_=nv_sr_srsg_0_tt_8_nm_0_in_0_q_terrifier%25203" target="_blank" rel="noopener noreferrer">
+                <img class="film-pics" src="https://image.tmdb.org/t/p/original/7NDHoebflLwL1CcgLJ9wZbbDrmV.jpg" loading="lazy" alt="Terrifier 3">
+              </a>
+              <div class="film-description">
+                <p class="movie-info">2024</p><span class="film-type">Horror/Slasher</span><br>
+              </div>
+              <a class="movie-links" href="https://www.imdb.com/title/tt27911000/?ref_=nv_sr_srsg_0_tt_8_nm_0_in_0_q_terrifier%25203" target="_blank" rel="noopener noreferrer">Terrifier 3</a>
+            </div>        
+  
+            <div class="item-movie">
+              <a href="https://www.imdb.com/title/tt0295700/?ref_=nv_sr_srsg_0_tt_8_nm_0_in_0_q_wrong%2520turn" target="_blank" rel="noopener noreferrer">
+                <img class="film-pics" src="https://image.tmdb.org/t/p/original/12G5V0dTmljnv7RFMT144dJ2chh.jpg" loading="lazy" alt="Terrifier 3">
+              </a>
+              <div class="film-description">
+                <p class="movie-info">2003</p><span class="film-type">Horror/Slasher</span><br>
+              </div>
+              <a class="movie-links" href="https://www.imdb.com/title/tt0295700/?ref_=nv_sr_srsg_0_tt_8_nm_0_in_0_q_wrong%2520turn" target="_blank" rel="noopener noreferrer">Wrong Turn</a>
+            </div>        
+  
+            <div class="item-movie">
+              <a href="https://www.imdb.com/title/tt0454841/?ref_=nv_sr_srsg_0_tt_8_nm_0_in_0_q_the%2520hills%2520have%2520" target="_blank" rel="noopener noreferrer">
+                <img class="film-pics" src="https://image.tmdb.org/t/p/original/53x6ZGyYLgYwa5VQRdSqvVYwrl9.jpg" loading="lazy" alt="Terrifier 3">
+              </a>
+              <div class="film-description">
+                <p class="movie-info">2006</p><span class="film-type">Horror/Slasher</span><br>
+              </div>
+              <a class="movie-links" href="https://www.imdb.com/title/tt0454841/?ref_=nv_sr_srsg_0_tt_8_nm_0_in_0_q_the%2520hills%2520have%2520" target="_blank" rel="noopener noreferrer">The Hills Have Eyes</a>
+            </div>        
+  
+            <div class="item-movie">
+              <a href="https://www.imdb.com/title/tt0329101/?ref_=nv_sr_srsg_0_tt_8_nm_0_in_0_q_freddy%2520vs%2520" target="_blank" rel="noopener noreferrer">
+                <img class="film-pics" src="https://image.tmdb.org/t/p/original/lkWn26GPQoEpOoHPpGLg208x2qV.jpg" loading="lazy" alt="FreddyvsJason">
+              </a>
+              <div class="film-description">
+                <p class="movie-info">2003</p><span class="film-type">Horror/Slasher</span><br>
+              </div>
+              <a class="movie-links" href="https://www.imdb.com/title/tt0329101/?ref_=nv_sr_srsg_0_tt_8_nm_0_in_0_q_freddy%2520vs%2520" target="_blank" rel="noopener noreferrer">Freddy vs Jason</a>
+            </div>        
+  
+            <div class="item-movie">
+              <a href="https://www.imdb.com/title/tt0450278/?ref_=nv_sr_srsg_0_tt_8_nm_0_in_0_q_hostel" target="_blank" rel="noopener noreferrer">
+                <img class="film-pics" src="https://image.tmdb.org/t/p/original/3vy3Woj8qthLrGIykYuLctJFYC5.jpg" loading="lazy" alt="Hostel">
+              </a>
+              <div class="film-description">
+                <p class="movie-info">2005</p><span class="film-type">Horror/Slasher</span><br>
+              </div>
+              <a class="movie-links" href="https://www.imdb.com/title/tt0450278/?ref_=nv_sr_srsg_0_tt_8_nm_0_in_0_q_hostel" target="_blank" rel="noopener noreferrer">Hostel</a>
+            </div>        
+  
+            <div class="item-movie">
+              <a href="https://www.imdb.com/title/tt0482606/?ref_=nv_sr_srsg_1_tt_7_nm_0_in_0_q_the%2520strangers" target="_blank" rel="noopener noreferrer">
+                <img class="film-pics" src="https://image.tmdb.org/t/p/original/vdxLpPsZkPZdFrREp7eSeSzcimj.jpg" loading="lazy" alt="The Strangers">
+              </a>
+              <div class="film-description">
+                <p class="movie-info">2008</p><span class="film-type">Horror/Slasher</span><br>
+              </div>
+              <a class="movie-links" href="https://www.imdb.com/title/tt0482606/?ref_=nv_sr_srsg_1_tt_7_nm_0_in_0_q_the%2520strangers" target="_blank" rel="noopener noreferrer">The Strangers</a>
+            </div>        
+           
+          </div>
+        </div>
+      </div>
+
+      <div class="category-container">
+        <h3 class="supntral">Supernatural</h3>
+        <button class="scroll-left supntral-left">
+          <span class="left-arrow">❮</span>
+        </button>
+        <button class="scroll-right supntral-right">
+          <span class="right-arrow">❯</span>
+        </button>
+        <div class="scroll-wrapper"> <!--items getting scrolled-->
+          <div class="horror-category">
+
+            <div class="item-movie">
+              <a href="https://www.imdb.com/title/tt3235888/?ref_=nv_sr_srsg_0_tt_8_nm_0_in_0_q_it%2520follows" target="_blank" rel="noopener noreferrer">
+                <img class="film-pics" src="https://image.tmdb.org/t/p/original/iwnQ1JH1wdWrGYkgWySptJ5284A.jpg" loading="lazy" alt="It Follows">
+              </a>
+              <div class="film-description">
+                <p class="movie-info">2014</p><span class="film-type">Horror/Supernatural</span><br>
+              </div>
+              <a class="movie-links" href="https://www.imdb.com/title/tt3235888/?ref_=nv_sr_srsg_0_tt_8_nm_0_in_0_q_it%2520follows" target="_blank" rel="noopener noreferrer">It Follows</a>
+            </div>
+
+            <div class="item-movie">
+              <a href="https://www.imdb.com/title/tt0187738/?ref_=nv_sr_srsg_0_tt_8_nm_0_in_0_q_blade%2520ii" target="_blank" rel="noopener noreferrer">
+                <img class="film-pics" src="https://image.tmdb.org/t/p/original/azzTa03g0Fb8HC7O3521qq0oc8Q.jpg" loading="lazy" alt="Blade">
+              </a>
+              <div class="film-description">
+                <p class="movie-info">2002</p><span class="film-type">Horror/Supernatural</span><br>
+              </div>
+              <a class="movie-links" href="https://www.imdb.com/title/tt0187738/?ref_=nv_sr_srsg_0_tt_8_nm_0_in_0_q_blade%2520ii" target="_blank" rel="noopener noreferrer">Blade</a>
+            </div>
+
+            <div class="item-movie">
+              <a href="https://www.imdb.com/title/tt0185937/?ref_=nv_sr_srsg_0_tt_5_nm_3_in_0_q_blair%2520w" target="_blank" rel="noopener noreferrer">
+                <img class="film-pics" src="https://image.tmdb.org/t/p/original/9050VGrYjYrEjpOvDZVAngLbg1f.jpg" loading="lazy" alt="The Blair Witch Project">
+              </a>
+              <div class="film-description">
+                <p class="movie-info">1999</p><span class="film-type">Horror/Supernatural</span><br>
+              </div>
+              <a class="movie-links" href="https://www.imdb.com/title/tt0185937/?ref_=nv_sr_srsg_0_tt_5_nm_3_in_0_q_blair%2520w" target="_blank" rel="noopener noreferrer">The Blair Witch Project</a>
+            </div>
+
+            <div class="item-movie">
+              <a href="https://www.imdb.com/title/tt1703199/?ref_=nv_sr_srsg_0_tt_6_nm_2_in_0_q_grave%2520enc" target="_blank" rel="noopener noreferrer">
+                <img class="film-pics" src="https://image.tmdb.org/t/p/original/zzq1JCjsk7buXVOA0mwRH7zbHOP.jpg" loading="lazy" alt="Grave Encounters">
+              </a>
+              <div class="film-description">
+                <p class="movie-info">2011</p><span class="film-type">Horror/Supernatural</span><br>
+              </div>
+              <a class="movie-links" href="https://www.imdb.com/title/tt1703199/?ref_=nv_sr_srsg_0_tt_6_nm_2_in_0_q_grave%2520enc" target="_blank" rel="noopener noreferrer">Grave Encounters</a>
+            </div>
+
+            <div class="item-movie">
+              <a href="https://www.imdb.com/title/tt4786282/?ref_=nv_sr_srsg_0_tt_8_nm_0_in_0_q_lights%2520out" target="_blank" rel="noopener noreferrer">
+                <img class="film-pics" src="https://image.tmdb.org/t/p/original/8BnElzAQQpp7ZgdJJiAe1diomr4.jpg" loading="lazy" alt="Lights Out">
+              </a>
+              <div class="film-description">
+                <p class="movie-info">2016</p><span class="film-type">Horror/Supernatural</span><br>
+              </div>
+              <a class="movie-links" href="https://www.imdb.com/title/tt4786282/?ref_=nv_sr_srsg_0_tt_8_nm_0_in_0_q_lights%2520out" target="_blank" rel="noopener noreferrer">Lights Out</a>
+            </div>
+
+            <div class="item-movie">
+              <a href="https://www.imdb.com/title/tt23468450/?ref_=nv_sr_srsg_4_tt_7_nm_0_in_0_q_long%2520legs" target="_blank" rel="noopener noreferrer">
+                <img class="film-pics" src="https://image.tmdb.org/t/p/original/5aj8vVGFwGVbQQs26ywhg4Zxk2L.jpg" loading="lazy" alt="Longlegs">
+              </a>
+              <div class="film-description">
+                <p class="movie-info">2024</p><span class="film-type">Horror/Supernatural</span><br>
+              </div>
+              <a class="movie-links" href="https://www.imdb.com/title/tt23468450/?ref_=nv_sr_srsg_4_tt_7_nm_0_in_0_q_long%2520legs" target="_blank" rel="noopener noreferrer">Longlegs</a>
+            </div>
+
+            <div class="item-movie">
+              <a href="https://www.imdb.com/title/tt0070047/?ref_=nv_sr_srsg_0_tt_8_nm_0_in_0_q_the%2520exorcist" target="_blank" rel="noopener noreferrer">
+                <img class="film-pics" src="https://image.tmdb.org/t/p/original/5x0CeVHJI8tcDx8tUUwYHQSNILq.jpg" loading="lazy" alt="The Exorcist">
+              </a>
+              <div class="film-description">
+                <p class="movie-info">1973</p><span class="film-type">Horror/Supernatural</span><br>
+              </div>
+              <a class="movie-links" href="https://www.imdb.com/title/tt0070047/?ref_=nv_sr_srsg_0_tt_8_nm_0_in_0_q_the%2520exorcist" target="_blank" rel="noopener noreferrer">The Exorcist(1973)</a>
+            </div>
+
+            <div class="item-movie">
+              <a href="https://www.imdb.com/title/tt3289956/?ref_=nv_sr_srsg_0_tt_8_nm_0_in_0_q_autopsy" target="_blank" rel="noopener noreferrer">
+                <img class="film-pics" src="https://image.tmdb.org/t/p/original/6K0wjP8kPCiPYy9PtXBGuypyt5I.jpg" loading="lazy" alt="The Autopsy of Jane Doe">
+              </a>
+              <div class="film-description">
+                <p class="movie-info">2016</p><span class="film-type">Horror/Supernatural</span><br>
+              </div>
+              <a class="movie-links" href="https://www.imdb.com/title/tt3289956/?ref_=nv_sr_srsg_0_tt_8_nm_0_in_0_q_autopsy" target="_blank" rel="noopener noreferrer">The Autopsy of Jane Doe</a>
+            </div>
+
+          </div>
+        </div>
+      </div>
+
+      <div class="category-container">
+        <h3 class="psycho-cat">Psychological Horror</h3>
+        <button class="scroll-left psycho-left">
+          <span class="left-arrow">❮</span>
+        </button>
+        <button class="scroll-right psycho-right">
+          <span class="right-arrow">❯</span>
+        </button>
+        <div class="scroll-wrapper"> <!--items getting scrolled-->
+          <div class="horror-category">
+
+            <div class="item-movie">
+              <a href="https://www.imdb.com/title/tt0947798/?ref_=nv_sr_srsg_0_tt_8_nm_0_in_0_q_black%2520swan" target="_blank" rel="noopener noreferrer">
+                <img class="film-pics" src="https://image.tmdb.org/t/p/original/rH19vkjAzCZ0HIUvrgB3rowm68h.jpg" loading="lazy" alt="Black Swan">
+              </a>
+              <div class="film-description">
+                <p class="movie-info">2010</p><span class="film-type">Horror/Psychological</span><br>
+              </div>
+              <a class="movie-links" href="https://www.imdb.com/title/tt0947798/?ref_=nv_sr_srsg_0_tt_8_nm_0_in_0_q_black%2520swan" target="_blank" rel="noopener noreferrer">Black Swan</a>
+            </div>
+
+            <div class="item-movie">
+              <a href="https://www.imdb.com/title/tt14858658/?ref_=nv_sr_srsg_1_tt_7_nm_0_in_0_q_blink%2520twice" target="_blank" rel="noopener noreferrer">
+                <img class="film-pics" src="https://image.tmdb.org/t/p/original/lZGOK0I2DJSRlEPNOAFTSNxSjDD.jpg" loading="lazy" alt="Blink Twice">
+              </a>
+              <div class="film-description">
+                <p class="movie-info">2024</p><span class="film-type">Horror/Psychological</span><br>
+              </div>
+              <a class="movie-links" href="https://www.imdb.com/title/tt14858658/?ref_=nv_sr_srsg_1_tt_7_nm_0_in_0_q_blink%2520twice" target="_blank" rel="noopener noreferrer">Blink Twice</a>
+            </div>
+
+            <div class="item-movie">
+              <a href="https://www.imdb.com/title/tt2400463/?ref_=nv_sr_srsg_3_tt_8_nm_0_in_0_q_the%2520invit" target="_blank" rel="noopener noreferrer">
+                <img class="film-pics" src="https://image.tmdb.org/t/p/original/otZMaGHWnKPgOODF6SSVNGqbI4X.jpg" loading="lazy" alt="The Invitation">
+              </a>
+              <div class="film-description">
+                <p class="movie-info">2015</p><span class="film-type">Horror/Psychological</span><br>
+              </div>
+              <a class="movie-links" href="https://www.imdb.com/title/tt2400463/?ref_=nv_sr_srsg_3_tt_8_nm_0_in_0_q_the%2520invit" target="_blank" rel="noopener noreferrer">The Invitation</a>
+            </div>
+
+            <div class="item-movie">
+              <a href="https://www.imdb.com/title/tt21905744/?ref_=nv_sr_srsg_0_tt_8_nm_0_in_0_q_the%2520front%2520room" target="_blank" rel="noopener noreferrer">
+                <img class="film-pics" src="https://image.tmdb.org/t/p/original/p0qqnfmhmJYYz73jK7UOwP3ZUgn.jpg" loading="lazy" alt="The Front Room">
+              </a>
+              <div class="film-description">
+                <p class="movie-info">2024</p><span class="film-type">Horror/Psychological</span><br>
+              </div>
+              <a class="movie-links" href="https://www.imdb.com/title/tt21905744/?ref_=nv_sr_srsg_0_tt_8_nm_0_in_0_q_the%2520front%2520room" target="_blank" rel="noopener noreferrer">The Front Room</a>
+            </div>
+
+            <div class="item-movie">
+              <a href="https://www.imdb.com/title/tt28015403/?ref_=int_popm_tt_i_3" target="_blank" rel="noopener noreferrer">
+                <img class="film-pics" src="https://image.tmdb.org/t/p/original/5HJqjCTcaE1TFwnNh3Dn21be2es.jpg" loading="lazy" alt="Heretic">
+              </a>
+              <div class="film-description">
+                <p class="movie-info">2024</p><span class="film-type">Horror/Psychological</span><br>
+              </div>
+              <a class="movie-links" href="https://www.imdb.com/title/tt28015403/?ref_=int_popm_tt_i_3" target="_blank" rel="noopener noreferrer">Heretic</a>
+            </div>
+
+            <div class="item-movie">
+              <a href="https://www.imdb.com/title/tt0063522/?ref_=int_ratm_tt_i_3" target="_blank" rel="noopener noreferrer">
+                <img class="film-pics" src="https://image.tmdb.org/t/p/original/nclYFGpVzfbiORO5ELVVdxzt9Vg.jpg" loading="lazy" alt="Rosemarys Baby">
+              </a>
+              <div class="film-description">
+                <p class="movie-info">1968</p><span class="film-type">Horror/Psychological</span><br>
+              </div>
+              <a class="movie-links" href="https://www.imdb.com/title/tt0063522/?ref_=int_ratm_tt_i_3" target="_blank" rel="noopener noreferrer">Rosemary's Baby</a>
+            </div>
+
+            <div class="item-movie">
+              <a href="https://www.imdb.com/title/tt7984734/?ref_=int_ratm_tt_i_13" target="_blank" rel="noopener noreferrer">
+                <img class="film-pics" src="https://image.tmdb.org/t/p/original/3nk9UoepYmv1G9oP18q6JJCeYwN.jpg" loading="lazy" alt="The Lighthouse">
+              </a>
+              <div class="film-description">
+                <p class="movie-info">2019</p><span class="film-type">Horror/Psychological</span><br>
+              </div>
+              <a class="movie-links" href="https://www.imdb.com/title/tt7984734/?ref_=int_ratm_tt_i_13" target="_blank" rel="noopener noreferrer">The Lighthouse</a>
+            </div>
+
+            <div class="item-movie">
+              <a href="https://www.imdb.com/title/tt9764362/?ref_=int_ratm_tt_i_21" target="_blank" rel="noopener noreferrer">
+                <img class="film-pics" src="https://image.tmdb.org/t/p/original/v31MsWhF9WFh7Qooq6xSBbmJxoG.jpg" loading="lazy" alt="The Menu">
+              </a>
+              <div class="film-description">
+                <p class="movie-info">2022</p><span class="film-type">Horror/Psychological</span><br>
+              </div>
+              <a class="movie-links" href="https://www.imdb.com/title/tt9764362/?ref_=int_ratm_tt_i_21" target="_blank" rel="noopener noreferrer">The Menu</a>
+            </div>
+
+          </div>
+        </div>
+      </div>
+
+      <div class="category-container">
+        <h3 class="psycho-cat">Found Footage Horror</h3>
+        <button class="scroll-left psycho-left">
+          <span class="left-arrow">❮</span>
+        </button>
+        <button class="scroll-right psycho-right">
+          <span class="right-arrow">❯</span>
+        </button>
+        <div class="scroll-wrapper"> <!--items getting scrolled-->
+          <div class="horror-category">
+
+            <div class="item-movie">
+              <a href="https://www.imdb.com/title/tt2870612/?ref_=nv_sr_srsg_0_tt_8_nm_0_in_0_q_aas%2520above%2520so" target="_blank" rel="noopener noreferrer">
+                <img class="film-pics" src="https://image.tmdb.org/t/p/original/oJZSajKLJkoTOzSZQN2ZwRnPwHZ.jpg" loading="lazy" alt="As Above So Below">
+              </a>
+              <div class="film-description">
+                <p class="movie-info">2014</p><span class="film-type">Horror/Found Footage</span><br>
+              </div>
+              <a class="movie-links" href="https://www.imdb.com/title/tt2870612/?ref_=nv_sr_srsg_0_tt_8_nm_0_in_0_q_aas%2520above%2520so" target="_blank" rel="noopener noreferrer">As Above So Below</a>
+            </div>
+
+            <div class="item-movie">
+              <a href="https://www.imdb.com/title/tt1060277/?ref_=nv_sr_srsg_0_tt_7_nm_1_in_0_q_cloverfield" target="_blank" rel="noopener noreferrer">
+                <img class="film-pics" src="https://image.tmdb.org/t/p/original/qIegUGJqyMMCRjkKV1s7A9MqdJ8.jpg" loading="lazy" alt="Cloverfield">
+              </a>
+              <div class="film-description">
+                <p class="movie-info">2008</p><span class="film-type">Horror/Found Footage</span><br>
+              </div>
+              <a class="movie-links" href="https://www.imdb.com/title/tt1060277/?ref_=nv_sr_srsg_0_tt_7_nm_1_in_0_q_cloverfield" target="_blank" rel="noopener noreferrer">Cloverfield</a>
+            </div>
+
+            <div class="item-movie">
+              <a href="https://www.imdb.com/title/tt3387648/?ref_=nv_sr_srsg_1_tt_7_nm_0_in_0_q_the%2520taking%2520of" target="_blank" rel="noopener noreferrer">
+                <img class="film-pics" src="https://image.tmdb.org/t/p/original/77i7EBUyQKOUiZeYQ5tWDGQb0AI.jpg" loading="lazy" alt="The Taking of Deborah Logan">
+              </a>
+              <div class="film-description">
+                <p class="movie-info">2014</p><span class="film-type">Horror/Found Footage</span><br>
+              </div>
+              <a class="movie-links" href="https://www.imdb.com/title/tt3387648/?ref_=nv_sr_srsg_1_tt_7_nm_0_in_0_q_the%2520taking%2520of" target="_blank" rel="noopener noreferrer">The Taking of Deborah Logan</a>
+            </div>
+
+            <div class="item-movie">
+              <a href="https://www.imdb.com/title/tt1038988/?ref_=nv_sr_srsg_1_tt_7_nm_0_in_0_q_rec" target="_blank" rel="noopener noreferrer">
+                <img class="film-pics" src="/images/rec.jpg" loading="lazy" alt="REC">
+              </a>
+              <div class="film-description">
+                <p class="movie-info">2007</p><span class="film-type">Horror/Found Footage</span><br>
+              </div>
+              <a class="movie-links" href="https://www.imdb.com/title/tt1038988/?ref_=nv_sr_srsg_1_tt_7_nm_0_in_0_q_rec" target="_blank" rel="noopener noreferrer">[REC]</a>
+            </div>
+
+            <div class="item-movie">
+              <a href="https://www.imdb.com/title/tt12749596/?ref_=nv_sr_srsg_0_tt_8_nm_0_in_0_q_host" target="_blank" rel="noopener noreferrer">
+                <img class="film-pics" src="https://image.tmdb.org/t/p/original/h7dZpJDORYs5c56dydbrLFkEXpE.jpg" loading="lazy" alt="Host">
+              </a>
+              <div class="film-description">
+                <p class="movie-info">2020</p><span class="film-type">Horror/Found Footage</span><br>
+              </div>
+              <a class="movie-links" href="https://www.imdb.com/title/tt12749596/?ref_=nv_sr_srsg_0_tt_8_nm_0_in_0_q_host" target="_blank" rel="noopener noreferrer">Host</a>
+            </div>
+
+            <div class="item-movie">
+              <a href="https://www.imdb.com/title/tt2428170/?ref_=nv_sr_srsg_0_tt_8_nm_0_in_0_q_creep" target="_blank" rel="noopener noreferrer">
+                <img class="film-pics" src="https://image.tmdb.org/t/p/original/qn53D574tT0YRyLgirEFHQwGUXw.jpg" loading="lazy" alt="Creep">
+              </a>
+              <div class="film-description">
+                <p class="movie-info">2014</p><span class="film-type">Horror/Found Footage</span><br>
+              </div>
+              <a class="movie-links" href="https://www.imdb.com/title/tt2428170/?ref_=nv_sr_srsg_0_tt_8_nm_0_in_0_q_creep" target="_blank" rel="noopener noreferrer">Creep</a>
+            </div>
+
+            <div class="item-movie">
+              <a href="https://www.imdb.com/title/tt3567288/?ref_=nv_sr_srsg_0_tt_8_nm_0_in_0_q_the%2520visit" target="_blank" rel="noopener noreferrer">
+                <img class="film-pics" src="https://image.tmdb.org/t/p/original/mtMfKRCa2V5b7d9k4piogB72mcY.jpg" loading="lazy" alt="The Visit">
+              </a>
+              <div class="film-description">
+                <p class="movie-info">2015</p><span class="film-type">Horror/Found Footage</span><br>
+              </div>
+              <a class="movie-links" href="https://www.imdb.com/title/tt3567288/?ref_=nv_sr_srsg_0_tt_8_nm_0_in_0_q_the%2520visit" target="_blank" rel="noopener noreferrer">The Visit</a>
+            </div>
+
+            <div class="item-movie">
+              <a href="https://www.imdb.com/title/tt4267026/?ref_=nv_sr_srsg_0_tt_8_nm_0_in_0_q_hellhouse" target="_blank" rel="noopener noreferrer">
+                <img class="film-pics" src="/images/hell.jpg" loading="lazy" alt="Hellhouse LLC">
+              </a>
+              <div class="film-description">
+                <p class="movie-info">2015</p><span class="film-type">Horror/Found Footage</span><br>
+              </div>
+              <a class="movie-links" href="https://www.imdb.com/title/tt4267026/?ref_=nv_sr_srsg_0_tt_8_nm_0_in_0_q_hellhouse" target="_blank" rel="noopener noreferrer">Hellhouse LLC</a>
+            </div>
+
+          </div>
+        </div>
+      </div>
+
+      <div class="category-container">
+        <h3 class="comedy-head">Comedy Horror</h3>
+        <button class="scroll-left comedy-left">
+          <span class="left-arrow">❮</span>
+        </button>
+        <button class="scroll-right comedy-right">
+          <span class="right-arrow">❯</span>
+        </button>
+        <div class="scroll-wrapper"> <!--items getting scrolled-->
+          <div class="horror-category">
+
+            <div class="item-movie">
+              <a href="https://www.imdb.com/title/tt2049403/?ref_=nv_sr_srsg_2_tt_5_nm_1_in_0_q_beetlejuice" target="_blank" rel="noopener noreferrer">
+                <img class="film-pics" src="https://image.tmdb.org/t/p/original/kKgQzkUCnQmeTPkyIwHly2t6ZFI.jpg" loading="lazy" alt="Beetlejuice Beetlejuice">
+              </a>
+              <div class="film-description">
+                <p class="movie-info">2024</p><span class="film-type">Horror/Comedy</span><br>
+              </div>
+              <a class="movie-links" href="https://www.imdb.com/title/tt2049403/?ref_=nv_sr_srsg_2_tt_5_nm_1_in_0_q_beetlejuice" target="_blank" rel="noopener noreferrer">Beetlejuice Beetlejuice</a>
+            </div>
+
+            <div class="item-movie">
+              <a href="https://www.imdb.com/title/tt1156398/?ref_=nv_sr_srsg_0_tt_8_nm_0_in_0_q_zombieland" target="_blank" rel="noopener noreferrer">
+                <img class="film-pics" src="https://image.tmdb.org/t/p/original/dUkAmAyPVqubSBNRjRqCgHggZcK.jpg" loading="lazy" alt="Zombieland">
+              </a>
+              <div class="film-description">
+                <p class="movie-info">2009</p><span class="film-type">Horror/Comedy</span><br>
+              </div>
+              <a class="movie-links" href="https://www.imdb.com/title/tt1156398/?ref_=nv_sr_srsg_0_tt_8_nm_0_in_0_q_zombieland" target="_blank" rel="noopener noreferrer">Zombieland</a>
+            </div>
+
+            <div class="item-movie">
+              <a href="https://www.imdb.com/title/tt3850590/?ref_=nv_sr_srsg_1_tt_7_nm_0_in_0_q_krampus" target="_blank" rel="noopener noreferrer">
+                <img class="film-pics" src="https://image.tmdb.org/t/p/original/dxnRNv9GL5tupUoVPE5lT2RdO9q.jpg" loading="lazy" alt="Krampus">
+              </a>
+              <div class="film-description">
+                <p class="movie-info">2015</p><span class="film-type">Horror/Comedy</span><br>
+              </div>
+              <a class="movie-links" href="https://www.imdb.com/title/tt3850590/?ref_=nv_sr_srsg_1_tt_7_nm_0_in_0_q_krampus" target="_blank" rel="noopener noreferrer">Krampus</a>
+            </div>
+
+            <div class="item-movie">
+              <a href="https://www.imdb.com/title/tt0365748/?ref_=nv_sr_srsg_1_tt_1_nm_6_in_0_q_shaun" target="_blank" rel="noopener noreferrer">
+                <img class="film-pics" src="https://image.tmdb.org/t/p/original/dgXPhzNJH8HFTBjXPB177yNx6RI.jpg" loading="lazy" alt="Shaun of the Dead">
+              </a>
+              <div class="film-description">
+                <p class="movie-info">2004</p><span class="film-type">Horror/Comedy</span><br>
+              </div>
+              <a class="movie-links" href="https://www.imdb.com/title/tt0365748/?ref_=nv_sr_srsg_1_tt_1_nm_6_in_0_q_shaun" target="_blank" rel="noopener noreferrer">Shaun of the Dead</a>
+            </div>
+
+            <div class="item-movie">
+              <a href="https://www.imdb.com/title/tt8110652/?ref_=nv_sr_srsg_0_tt_7_nm_1_in_0_q_bodies%2520bodies" target="_blank" rel="noopener noreferrer">
+                <img class="film-pics" src="https://image.tmdb.org/t/p/original/hSuTjDmqRdy7Dii8ymnF2WILTeP.jpg" loading="lazy" alt="Bodies Bodies Bodies">
+              </a>
+              <div class="film-description">
+                <p class="movie-info">2022</p><span class="film-type">Horror/Comedy</span><br>
+              </div>
+              <a class="movie-links" href="https://www.imdb.com/title/tt8110652/?ref_=nv_sr_srsg_0_tt_7_nm_1_in_0_q_bodies%2520bodies" target="_blank" rel="noopener noreferrer">Bodies Bodies Bodies</a>
+            </div>
+
+            <div class="item-movie">
+              <a href="https://www.imdb.com/title/tt21188080/?ref_=sr_i_43" target="_blank" rel="noopener noreferrer">
+                <img class="film-pics" src="https://image.tmdb.org/t/p/original/7Pm0hYthiHVmTO4MCuP4mWfrJIa.jpg" loading="lazy" alt="Lisa Frankenstein">
+              </a>
+              <div class="film-description">
+                <p class="movie-info">2024</p><span class="film-type">Horror/Comedy</span><br>
+              </div>
+              <a class="movie-links" href="https://www.imdb.com/title/tt21188080/?ref_=sr_i_43" target="_blank" rel="noopener noreferrer">Lisa Frankenstein</a>
+            </div>
+
+            <div class="item-movie">
+              <a href="https://www.imdb.com/title/tt0091419/?ref_=nv_sr_srsg_0_tt_8_nm_0_in_0_q_little%2520shop" target="_blank" rel="noopener noreferrer">
+                <img class="film-pics" src="https://image.tmdb.org/t/p/original/iKkbN17OmFosaW6asCNZTTsyvpu.jpg" loading="lazy" alt="Little Shop of Horrors">
+              </a>
+              <div class="film-description">
+                <p class="movie-info">1986</p><span class="film-type">Horror/Comedy</span><br>
+              </div>
+              <a class="movie-links" href="https://www.imdb.com/title/tt0091419/?ref_=nv_sr_srsg_0_tt_8_nm_0_in_0_q_little%2520shop" target="_blank" rel="noopener noreferrer">Little Shop of Horrors</a>
+            </div>
+
+            <div class="item-movie">
+              <a href="https://www.imdb.com/title/tt11426232/?ref_=nv_sr_srsg_4_tt_5_nm_3_in_0_q_tota" target="_blank" rel="noopener noreferrer">
+                <img class="film-pics" src="https://image.tmdb.org/t/p/original/52YBwGJ3cJs54fpBzwnT1lnqgTo.jpg" loading="lazy" alt="Totally Killer">
+              </a>
+              <div class="film-description">
+                <p class="movie-info">2023</p><span class="film-type">Horror/Comedy</span><br>
+              </div>
+              <a class="movie-links" href="https://www.imdb.com/title/tt11426232/?ref_=nv_sr_srsg_4_tt_5_nm_3_in_0_q_tota" target="_blank" rel="noopener noreferrer">Totally Killer</a>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </section>
+  <!--CATEGORY SCROLL END-->
+
+    <section class="hidden-gems">
+       
+      <h2 class="gem-header">Hidden Gems</h2>
+      <div class="gem-1">
+        <img class="film-pic" src="https://image.tmdb.org/t/p/original/KPrZ8lbgbMD7gr1pkMKoNbtcCK.jpg" loading="lazy" alt="Gonjiam Haunted Asylum">
+        <div class="gem-description">
+          <p class="gem-title">Gonjiam Haunted Asylum</p>
+          <p class="gem-release"> Release Year: 2018</p>
+          <p class="gem-genre">Horror/Thriller</p>
+          <p class="description">An internet broadcaster recruits a handful of people for their 'experience the horror' show at Gonjiam. They are to explore the haunted asylum and stream it live on the show. To attract more viewers, the show hosts play tricks on the guests, but things start to get out of hand when they are inside the place, where tortured souls could really be lurking in the shadows.</p>
+        </div>
+      </div>
+
+      <div class="gem-1">
+        <img class="film-pic" src="https://image.tmdb.org/t/p/original/oSTFMqFpVB4yq9SOIxBp8xZ9jh5.jpg" loading="lazy" alt="Last Shift">
+        <div class="gem-description">
+          <p class="gem-title">Last Shift</p>
+          <p class="gem-release"> Release Year: 2014</p>
+          <p class="gem-genre">Horror/Thriller</p>
+          <p class="description">A Manson-inspired horror film centering around a transitioning police station. Officer Jessica Loren has been assigned to wait for a Hazmat team to pick up bio-hazardous waste from the station's armory. But unbeknownst to Jessica, cult Leader John Michael Paymon has haunted the department ever since he and two of this followers committed suicide a year ago to date. And now, Jessica is about to find out how dangerous they can be when she's left alone on this Last Shift.</p>
+        </div>
+      </div>
+
+      <div class="gem-1">
+        <img class="film-pic" src="https://image.tmdb.org/t/p/original/9CR1G9kVycsbYfnDO40JClrYEWr.jpg" loading="lazy" alt="Dead Silence">
+        <div class="gem-description">
+          <p class="gem-title">Dead Silence</p>
+          <p class="gem-release"> Release Year: 2007</p>
+          <p class="gem-genre">Horror/Thriller</p>
+          <p class="description">Every town has its own ghost story, and a local folktale around Ravens Fair is about a ventriloquist named Mary Shaw. After she went mad in the 1940s, she was accused of kidnapping a young boy who yelled out in one of her performances that she was a fraud. Because of this she was hunted down by townspeople who in the ultimate act of revenge, cut out her tongue and then killed her. They buried her along with her "children," a handmade collection of vaudeville dolls, and assumed they had silenced her forever. However, Ravens Fair has been plagued by mysterious deaths around them after Mary Shaws collection has returned from their graves and have come to seek revenge on people that killed her and their families.</p>
+        </div>
+      </div>
+
+    </section>
+
+  </main>   
+
+<script type="module" src="scripts.js"></script>
+<script type="module" src="scroll-script.js"></script>
+<script type="module" src="mouse-swipe.js"></script>
+<script src="trailers.js"></script>
+<script type="module" src="popular.js"></script>
+  <footer style="background-color: #111; color: #ffffff; padding: 20px; text-align: center; border-top: 1px solid #e0e0e0;">
+    <div style="margin-bottom: 15px;">
+      <p>&copy; 2024 Oatmeal Horror</p>
+    </div>
+    <div style="margin-bottom: 10px;">
+      <a href="/about" style="color: #ffffff; margin: 0 10px; text-decoration: none;">About Us</a> |
+      <a href="/contact" style="color: #ffffff; margin: 0 10px; text-decoration: none;">Contact</a> |
+      <a href="/privacy" style="color: #ffffff; margin: 0 10px; text-decoration: none;">Privacy Policy</a>
+    </div>
+    <div>
+      <a href="https://twitter.com/" target="_blank" rel="noopener noreferrer"><img src="/images/x.jpg" alt="Twitter" style="width: 24px; margin: 0 5px;"></a>
+      <a href="https://facebook.com/" target="_blank" rel="noopener noreferrer"><img src="/images/fb.png" alt="Facebook" style="width: 24px; margin: 0 5px;"></a>
+      <a href="https://instagram.com/" target="_blank" rel="noopener noreferrer"><img src="/images/insta.png" alt="Instagram" style="width: 24px; margin: 0 5px;"></a>
+  </div>
+  </footer>	
+</body>
+</html>
